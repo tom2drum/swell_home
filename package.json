@@ -19,7 +19,7 @@
     "client": "node start-client.js",
     "lint": "eslint . --ext .js,.jsx --quiet",
 		"precommit": "lint-staged",
-		"heroku-postbuild": "yarn --cwd client --production=false && yarn build --cwd client --production=false"
+		"heroku-postbuild": "cd client && yarn --production=false && yarn build --production=false"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
