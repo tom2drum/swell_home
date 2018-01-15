@@ -1,4 +1,8 @@
 language: node_js
 node_js:
-  - "iojs"
   - "8"
+services: mongodb
+cache:
+  directories:
+    - "node_modules"
+  yarn: true
