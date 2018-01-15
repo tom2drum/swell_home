@@ -1,6 +1,7 @@
 /* eslint-disable global-require */
 switch (process.env.NODE_ENV) {
-	case 'production':
+	case 'test':
+		module.exports = require('./test');
 		break;
 	default:
 		module.exports = require('./dev');

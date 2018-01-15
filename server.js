@@ -7,7 +7,7 @@ require('./models/_models');
 
 //	DB CONNECTION
 mongoose.Promise = global.Promise;
-mongoose.connect(MONGODB_URI);
+mongoose.connect(MONGODB_URI, {useMongoClient: true});
 
 
 //	CREATING A SERVER
@@ -32,3 +32,7 @@ app.set('port', process.env.PORT || 3001);
 app.listen(app.get('port'), () => {
   console.log(`Find the server at: http://localhost:${app.get('port')}/`); // eslint-disable-line no-console
 });
+
+module.exports = {
+	app
+};
