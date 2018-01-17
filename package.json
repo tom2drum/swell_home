@@ -17,11 +17,11 @@
   },
   "scripts": {
     "start": "node server.js",
-    "dev": "concurrently \"yarn client\" \"yarn test-watch\"",
+    "dev": "concurrently \"yarn client\" \"yarn server\"",
     "server": "nodemon server.js",
     "client": "node start-client.js",
     "lint": "eslint . --ext .js,.jsx --quiet",
-		"test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha tests/**/*.test.js ",
+		"test": "mocha tests/**/*.test.js --reporter list --exit",
 		"test-watch": "nodemon --exec \"npm test\"",
     "precommit": "lint-staged",
 		"heroku-postbuild": "cd ./client && yarn --production=false && yarn build --production=false"

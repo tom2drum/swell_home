@@ -1,13 +1,11 @@
 const express = require('express');
-const mongoose = require('mongoose');
 
-const { MONGODB_URI } = require('./config/_keys');
+const setupMongoose = require('./config/setup-mongoose');
 require('./models/_models');
 
 
 //	DB CONNECTION
-mongoose.Promise = global.Promise;
-mongoose.connect(MONGODB_URI, {useMongoClient: true});
+setupMongoose();
 
 
 //	CREATING A SERVER
