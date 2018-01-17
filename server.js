@@ -1,12 +1,12 @@
 const express = require('express');
 
 const setupMongoose = require('./config/setup-mongoose');
-require('./models/_models');
+const setupModels = require('./config/setup-models');
 
 
-//	DB CONNECTION
+//	DB SETUP
 setupMongoose();
-
+setupModels();
 
 //	CREATING A SERVER
 const app = express();
