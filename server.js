@@ -2,18 +2,20 @@ const express = require('express');
 
 const setupMongoose = require('./config/setup-mongoose');
 const setupModels = require('./config/setup-models');
+const getRouter = require('./routes');
 
 
 //	DB SETUP
 setupMongoose();
 setupModels();
 
+
 //	CREATING A SERVER
 const app = express();
 
 
 // 	ROUTES
-require('./routes/routes')(app);
+app.use(getRouter());
 
 
 //	CLIENT CONFIG

@@ -13,12 +13,10 @@ const connect = uri =>
     return Promise.reject(error);
   });
 
-const setupMongoose = async () => {
+module.exports = async () => {
   connect(MONGODB_URI);
 
   return function cleanup() {
     mongoose.connection.close();
   };
 };
-
-module.exports = setupMongoose;

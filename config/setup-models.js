@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
 const getCategorySchema = require('../models/category');
 
-const setupModels = () => {
+module.exports = () => {
   const CategorySchema = getCategorySchema();
   mongoose.model('category', CategorySchema);
 };
-
-module.exports = setupModels;
