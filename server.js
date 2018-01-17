@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 
 const setupMongoose = require('./config/setup-mongoose');
 const setupModels = require('./config/setup-models');
@@ -11,6 +12,7 @@ const start = async () => {
 
   //	CREATING A SERVER
   const app = express();
+	app.use(cors());
 
   // 	ROUTES
   app.use(getRouter());
@@ -33,6 +35,8 @@ const start = async () => {
   });
 };
 
-start();
+if (process.env.NODE_ENV !== 'test') {
+	start();
+}
 
 module.exports = start;

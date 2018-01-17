@@ -8,7 +8,8 @@ const connect = uri =>
   mongoose.connect(uri).catch(error => {
     console.error(
       'There was a problem connecting mongoose to mongodb',
-      'Do you have mongodb running?'
+      'Do you have mongodb running?',
+			uri
     );
     return Promise.reject(error);
   });

@@ -5,6 +5,7 @@
   "private": false,
   "dependencies": {
     "babel-core": "6.14.0",
+    "cors": "^2.8.4",
     "express": "^4.16.2",
     "mongoose": "^4.13.9",
     "node-mongo-seeds": "^2.3.2"
@@ -21,12 +22,13 @@
     "server": "nodemon server.js",
     "client": "node start-client.js",
     "lint": "eslint . --ext .js,.jsx --quiet",
-		"test": "mocha tests/**/*.test.js --reporter list --exit",
-		"test-watch": "nodemon --exec \"npm test\"",
+    "test": "jest",
+    "test-watch": "nodemon --exec \"npm test\"",
     "precommit": "lint-staged",
-		"heroku-postbuild": "cd ./client && yarn --production=false && yarn build --production=false"
-	},
+    "heroku-postbuild": "cd ./client && yarn --production=false && yarn build --production=false"
+  },
   "devDependencies": {
+    "axios": "^0.17.1",
     "babel-cli": "^6.14.0",
     "babel-eslint": "^8.1.2",
     "concurrently": "^3.1.0",
@@ -38,12 +40,10 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-prettier": "^2.4.0",
     "eslint-plugin-react": "7.4.0",
-    "expect": "^22.0.6",
     "husky": "^0.14.3",
+    "jest": "^22.1.1",
     "lint-staged": "^6.0.0",
-    "mocha": "^4.1.0",
     "nodemon": "^1.14.11",
-    "prettier": "^1.10.2",
-    "supertest": "^3.0.0"
+    "prettier": "^1.10.2"
   }
 }

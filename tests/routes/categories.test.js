@@ -1,20 +1,29 @@
-const expect = require('expect');
-const request = require('supertest');
+const axios = require('axios');
 
-const { app } = require('../../server');
-const categories = require('../../seeds/categories');
-const {populateCategories} = require('../_seed');
+const startServer = require('../../server');
+const categoriesSeed = require('../../seeds/categories');
+const { populateCategories } = require('../_seed');
+
+const api = axios.create({
+	baseURL: 'http://localhost:3001/api',
+})
+
+let server;
+
+beforeAll(async () => {
+  server = await startServer();
+});
+
+afterAll(done => {
+  server.close(done);
+});
 
 beforeEach(populateCategories);
 
 describe('GET /api/categories', () => {
-  it('should get all product categories', done => {
-    request(app)
-      .get('/api/categories')
-      .expect(200)
-      .expect(res => {
-        expect(res.body.categories.length).toBe(categories.length);
-      })
-      .end(done);
+  test('should get all product categories', async () => {
+		const categories = await api.get('/categories').then(res => res.data.categories);
+		expect(categories).toHaveLength(categoriesSeed.length);
+		console.log(categories.length);
   });
 });
