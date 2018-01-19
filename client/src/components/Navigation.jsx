@@ -10,4 +10,4 @@ export default () => (
 				<li><Link to="/about">About</Link></li>
 			</ul>
 		</nav>
-	);
+	)
