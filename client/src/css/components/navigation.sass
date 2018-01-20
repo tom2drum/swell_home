@@ -1,0 +1,45 @@
+@import "../base/vars.sass"
+
+.Navigation
+	position: absolute
+	top: 0
+	left: 0
+	height: 100vh
+	display: flex
+
+	.navbar
+		position: relative
+		width: 500px
+		height: 100%
+		background-color: $color-white
+		display: flex
+		flex-direction: column
+		justify-content: center
+		text-align: center
+		z-index: 5
+
+		.links
+			font-size: 3rem
+
+			.link
+				margin: 15px 0
+
+		.social-media
+			width: 100%
+			position: absolute
+			left: 0
+			bottom: 50px
+			display: flex
+			justify-content: center
+			font-size: 1.2rem
+
+			.link
+				margin: 0 30px
+				a
+					@include circle-bg($color-grey, 30px)
+
+	.overlay
+		width: calc(100vw - 500px)
+		height: 100vh
+		background-color: $color-yellow
+		opacity: 0.5

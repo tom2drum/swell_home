@@ -25,8 +25,8 @@
     "server": "nodemon server.js",
     "client": "node start-client.js",
     "lint": "eslint . --ext .js,.jsx --quiet",
-    "test": "jest --coverage",
-    "test:watch": "jest --watch",
+    "test": "PORT=3002 jest --coverage",
+    "test:watch": "PORT=3002 jest --watch",
     "precommit": "lint-staged",
     "heroku-postbuild": "cd ./client && yarn --production=false && yarn build --production=false"
   },
