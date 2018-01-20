@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import NavigationLink from './NavigationLink';
+import NavigationToggle from './NavigationToggle';
 import navData from '../data/navigation.json';
 import smData from '../data/social-media.json';
 
@@ -56,6 +57,7 @@ class Navigation extends Component {
 
 		return (
       <div className="Navigation">
+				<NavigationToggle/>
         <nav className="navbar">
           <ul className="links" data-test="nav-links">{this.renderNavLinks()}</ul>
           <ul className="social-media" data-test="social-media-links">{Navigation.renderSocialMediaLinks()}</ul>

@@ -1,6 +1,6 @@
 /***    COLORS    ***/
 $color-white: #ffffff
-$color-black: #000000
+$color-black: #101010
 $color-grey: #ebebeb
 $color-mediumgrey: #cdcdcd
 $color-yellow: #f9ca5c
@@ -10,7 +10,7 @@ $color-beige: #e8e0d3
 
 
 /***    MIXINS    ***/
-@mixin circle-bg($color, $size)
+@mixin circle-bg($color, $size, $scale: 1)
 	position: relative
 	display: block
 	width: $size
@@ -30,4 +30,4 @@ $color-beige: #e8e0d3
 		transition: all 0.3s
 	&:hover
 		&::before
-			transform: scale(1.1)
+			transform: scale($scale)
