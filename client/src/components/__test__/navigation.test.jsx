@@ -7,7 +7,7 @@ import { Navigation } from '../Navigation';
 import navLinks from '../../data/navigation.json';
 import smLinks from '../../data/social-media.json';
 
-function mountComponent(props = {}) {
+function mountComponent(props = {}, isShallow = true) {
 	const propsToUse = {
 		'location': {
 			pathname: '/'
@@ -15,7 +15,11 @@ function mountComponent(props = {}) {
 		...props,
 	};
 
-	return shallow(<Navigation {...propsToUse} />)
+	if (isShallow) {
+		return shallow(<Navigation {...propsToUse} />)
+	}
+
+	return mount(<StaticRouter context={{}}><Navigation {...propsToUse} /></StaticRouter>);
 }
 
 function sel(id) {
@@ -61,5 +65,15 @@ test('method "changeOverlayColorHandler()" changes overlay color', () => {
 	wrapper.update();
 	overlayStyle = wrapper.find(sel('overlay')).get(0).props.style;
 	expect(overlayStyle).toEqual({backgroundColor});
+});
 
+test('it adds "is-open" class when toggle clicked', () => {
+	const wrapper = mountComponent({}, false);
+	const toggle = wrapper.find(sel('nav-toggle'));
+
+	toggle.simulate('click');
+	expect(wrapper.find(sel('navigation')).hasClass('is-open')).toBe(true);
+
+	toggle.simulate('click');
+	expect(wrapper.find(sel('navigation')).hasClass('is-open')).toBe(false);
 });

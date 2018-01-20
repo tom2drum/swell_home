@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { shallow } from 'enzyme';
 
@@ -5,6 +6,7 @@ import NavigationToggle from '../NavigationToggle';
 
 function mountComponent(props = {}) {
 	const propsToUse = {
+		onClickCallback: jest.fn(),
 		...props,
 	};
 

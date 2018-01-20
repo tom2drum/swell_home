@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import NavigationLink from './NavigationLink';
 import NavigationToggle from './NavigationToggle';
@@ -24,12 +25,17 @@ class Navigation extends Component {
 	}
 
 	state = {
-		overlayColor: ''
+		overlayColor: '',
+		isOpen: false
 	};
 
 	componentDidMount() {
 		this.setDefaultOverlayColor();
 	}
+
+	onToggleClickHandler = (toggledOn) => {
+		this.setState({isOpen: toggledOn});
+	};
 
 	setDefaultOverlayColor() {
 		const color = this.getDefaultOverlayColor();
@@ -55,9 +61,11 @@ class Navigation extends Component {
       backgroundColor: this.state.overlayColor
     };
 
+		const classes = classNames('Navigation', {'is-open': this.state.isOpen});
+
 		return (
-      <div className="Navigation">
-				<NavigationToggle/>
+			<div className={classes} data-test="navigation">
+				<NavigationToggle onClickCallback={this.onToggleClickHandler}/>
         <nav className="navbar">
           <ul className="links" data-test="nav-links">{this.renderNavLinks()}</ul>
           <ul className="social-media" data-test="social-media-links">{Navigation.renderSocialMediaLinks()}</ul>

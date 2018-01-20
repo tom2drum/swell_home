@@ -24,7 +24,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <NavigationToggle />,
+        <NavigationToggle
+          onClickCallback={[Function]}
+        />,
         <nav
           className="navbar"
         >
@@ -126,6 +128,7 @@ ShallowWrapper {
         />,
       ],
       "className": "Navigation",
+      "data-test": "navigation",
     },
     "ref": null,
     "rendered": Array [
@@ -133,7 +136,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "onClickCallback": [Function],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -605,7 +610,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <NavigationToggle />,
+          <NavigationToggle
+            onClickCallback={[Function]}
+          />,
           <nav
             className="navbar"
           >
@@ -707,6 +714,7 @@ ShallowWrapper {
           />,
         ],
         "className": "Navigation",
+        "data-test": "navigation",
       },
       "ref": null,
       "rendered": Array [
@@ -714,7 +722,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "onClickCallback": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
