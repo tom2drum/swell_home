@@ -1,0 +1,33 @@
+/***    COLORS    ***/
+$color-white: #ffffff
+$color-black: #000000
+$color-grey: #ebebeb
+$color-mediumgrey: #cdcdcd
+$color-yellow: #f9ca5c
+$color-apricot: #e5554f
+$color-lightblue: #bfced6
+$color-beige: #e8e0d3
+
+
+/***    MIXINS    ***/
+@mixin circle-bg($color, $size)
+	position: relative
+	display: block
+	width: $size
+	height: $size
+	line-height: $size
+	&::before
+		content: ''
+		display: block
+		width: 2 * $size
+		height: 2 * $size
+		position: absolute
+		left: -$size / 2
+		top: -$size / 2
+		border-radius: 50%
+		background-color: $color
+		z-index: -1
+		transition: all 0.3s
+	&:hover
+		&::before
+			transform: scale(1.1)

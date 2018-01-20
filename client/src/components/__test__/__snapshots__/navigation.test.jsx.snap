@@ -4,13 +4,13 @@ exports[`the component mounts with defaults 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <StaticRouter
-    basename=""
-    context={Object {}}
-    location="/"
-  >
-    <Unknown />
-  </StaticRouter>,
+  Symbol(enzyme.__unrendered__): <Navigation
+    location={
+      Object {
+        "pathname": "/",
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -21,73 +21,1143 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "children": <Unknown />,
-      "history": Object {
-        "action": "POP",
-        "block": [Function],
-        "createHref": [Function],
-        "go": [Function],
-        "goBack": [Function],
-        "goForward": [Function],
-        "listen": [Function],
-        "location": Object {
-          "hash": "",
-          "pathname": "/",
-          "search": "",
-        },
-        "push": [Function],
-        "replace": [Function],
-      },
+      "children": Array [
+        <nav
+          className="navbar"
+        >
+          <ul
+            className="links"
+            data-test="nav-links"
+          >
+            <NavigationLink
+              changeOverlayColor={[Function]}
+              overlayColor="#cdcdcd"
+              path="/"
+              text="Lookbook"
+            />
+            <NavigationLink
+              changeOverlayColor={[Function]}
+              overlayColor="#e5554f"
+              path="/shop"
+              text="Shop"
+            />
+            <NavigationLink
+              changeOverlayColor={[Function]}
+              overlayColor="#bfced6"
+              path="/contact"
+              text="Contact"
+            />
+            <NavigationLink
+              changeOverlayColor={[Function]}
+              overlayColor="#e8e0d3"
+              path="/about"
+              text="About"
+            />
+          </ul>
+          <ul
+            className="social-media"
+            data-test="social-media-links"
+          >
+            <li
+              className="link"
+            >
+              <a
+                href="https://facebook.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span
+                  className="fa fa-facebook"
+                />
+              </a>
+            </li>
+            <li
+              className="link"
+            >
+              <a
+                href="https://twitter.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span
+                  className="fa fa-twitter"
+                />
+              </a>
+            </li>
+            <li
+              className="link"
+            >
+              <a
+                href="https://pinterest.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span
+                  className="fa fa-pinterest"
+                />
+              </a>
+            </li>
+            <li
+              className="link"
+            >
+              <a
+                href="https://instagram.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span
+                  className="fa fa-instagram"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>,
+        <div
+          className="overlay"
+          data-test="overlay"
+          style={
+            Object {
+              "backgroundColor": "#cdcdcd",
+            }
+          }
+        />,
+      ],
+      "className": "Navigation",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {},
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-    "type": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <ul
+              className="links"
+              data-test="nav-links"
+            >
+              <NavigationLink
+                changeOverlayColor={[Function]}
+                overlayColor="#cdcdcd"
+                path="/"
+                text="Lookbook"
+              />
+              <NavigationLink
+                changeOverlayColor={[Function]}
+                overlayColor="#e5554f"
+                path="/shop"
+                text="Shop"
+              />
+              <NavigationLink
+                changeOverlayColor={[Function]}
+                overlayColor="#bfced6"
+                path="/contact"
+                text="Contact"
+              />
+              <NavigationLink
+                changeOverlayColor={[Function]}
+                overlayColor="#e8e0d3"
+                path="/about"
+                text="About"
+              />
+            </ul>,
+            <ul
+              className="social-media"
+              data-test="social-media-links"
+            >
+              <li
+                className="link"
+              >
+                <a
+                  href="https://facebook.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span
+                    className="fa fa-facebook"
+                  />
+                </a>
+              </li>
+              <li
+                className="link"
+              >
+                <a
+                  href="https://twitter.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span
+                    className="fa fa-twitter"
+                  />
+                </a>
+              </li>
+              <li
+                className="link"
+              >
+                <a
+                  href="https://pinterest.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span
+                    className="fa fa-pinterest"
+                  />
+                </a>
+              </li>
+              <li
+                className="link"
+              >
+                <a
+                  href="https://instagram.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span
+                    className="fa fa-instagram"
+                  />
+                </a>
+              </li>
+            </ul>,
+          ],
+          "className": "navbar",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <NavigationLink
+                  changeOverlayColor={[Function]}
+                  overlayColor="#cdcdcd"
+                  path="/"
+                  text="Lookbook"
+                />,
+                <NavigationLink
+                  changeOverlayColor={[Function]}
+                  overlayColor="#e5554f"
+                  path="/shop"
+                  text="Shop"
+                />,
+                <NavigationLink
+                  changeOverlayColor={[Function]}
+                  overlayColor="#bfced6"
+                  path="/contact"
+                  text="Contact"
+                />,
+                <NavigationLink
+                  changeOverlayColor={[Function]}
+                  overlayColor="#e8e0d3"
+                  path="/about"
+                  text="About"
+                />,
+              ],
+              "className": "links",
+              "data-test": "nav-links",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "/",
+                "nodeType": "class",
+                "props": Object {
+                  "changeOverlayColor": [Function],
+                  "overlayColor": "#cdcdcd",
+                  "path": "/",
+                  "text": "Lookbook",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "/shop",
+                "nodeType": "class",
+                "props": Object {
+                  "changeOverlayColor": [Function],
+                  "overlayColor": "#e5554f",
+                  "path": "/shop",
+                  "text": "Shop",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "/contact",
+                "nodeType": "class",
+                "props": Object {
+                  "changeOverlayColor": [Function],
+                  "overlayColor": "#bfced6",
+                  "path": "/contact",
+                  "text": "Contact",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "/about",
+                "nodeType": "class",
+                "props": Object {
+                  "changeOverlayColor": [Function],
+                  "overlayColor": "#e8e0d3",
+                  "path": "/about",
+                  "text": "About",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "ul",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="link"
+                >
+                  <a
+                    href="https://facebook.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      className="fa fa-facebook"
+                    />
+                  </a>
+                </li>,
+                <li
+                  className="link"
+                >
+                  <a
+                    href="https://twitter.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      className="fa fa-twitter"
+                    />
+                  </a>
+                </li>,
+                <li
+                  className="link"
+                >
+                  <a
+                    href="https://pinterest.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      className="fa fa-pinterest"
+                    />
+                  </a>
+                </li>,
+                <li
+                  className="link"
+                >
+                  <a
+                    href="https://instagram.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      className="fa fa-instagram"
+                    />
+                  </a>
+                </li>,
+              ],
+              "className": "social-media",
+              "data-test": "social-media-links",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "https://facebook.com",
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    href="https://facebook.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      className="fa fa-facebook"
+                    />
+                  </a>,
+                  "className": "link",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <span
+                      className="fa fa-facebook"
+                    />,
+                    "href": "https://facebook.com",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fa fa-facebook",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                  "type": "a",
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "https://twitter.com",
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    href="https://twitter.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      className="fa fa-twitter"
+                    />
+                  </a>,
+                  "className": "link",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <span
+                      className="fa fa-twitter"
+                    />,
+                    "href": "https://twitter.com",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fa fa-twitter",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                  "type": "a",
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "https://pinterest.com",
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    href="https://pinterest.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      className="fa fa-pinterest"
+                    />
+                  </a>,
+                  "className": "link",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <span
+                      className="fa fa-pinterest"
+                    />,
+                    "href": "https://pinterest.com",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fa fa-pinterest",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                  "type": "a",
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "https://instagram.com",
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    href="https://instagram.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      className="fa fa-instagram"
+                    />
+                  </a>,
+                  "className": "link",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <span
+                      className="fa fa-instagram"
+                    />,
+                    "href": "https://instagram.com",
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fa fa-instagram",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                  "type": "a",
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "nav",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "overlay",
+          "data-test": "overlay",
+          "style": Object {
+            "backgroundColor": "#cdcdcd",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
-        "children": <Unknown />,
-        "history": Object {
-          "action": "POP",
-          "block": [Function],
-          "createHref": [Function],
-          "go": [Function],
-          "goBack": [Function],
-          "goForward": [Function],
-          "listen": [Function],
-          "location": Object {
-            "hash": "",
-            "pathname": "/",
-            "search": "",
-          },
-          "push": [Function],
-          "replace": [Function],
-        },
+        "children": Array [
+          <nav
+            className="navbar"
+          >
+            <ul
+              className="links"
+              data-test="nav-links"
+            >
+              <NavigationLink
+                changeOverlayColor={[Function]}
+                overlayColor="#cdcdcd"
+                path="/"
+                text="Lookbook"
+              />
+              <NavigationLink
+                changeOverlayColor={[Function]}
+                overlayColor="#e5554f"
+                path="/shop"
+                text="Shop"
+              />
+              <NavigationLink
+                changeOverlayColor={[Function]}
+                overlayColor="#bfced6"
+                path="/contact"
+                text="Contact"
+              />
+              <NavigationLink
+                changeOverlayColor={[Function]}
+                overlayColor="#e8e0d3"
+                path="/about"
+                text="About"
+              />
+            </ul>
+            <ul
+              className="social-media"
+              data-test="social-media-links"
+            >
+              <li
+                className="link"
+              >
+                <a
+                  href="https://facebook.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span
+                    className="fa fa-facebook"
+                  />
+                </a>
+              </li>
+              <li
+                className="link"
+              >
+                <a
+                  href="https://twitter.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span
+                    className="fa fa-twitter"
+                  />
+                </a>
+              </li>
+              <li
+                className="link"
+              >
+                <a
+                  href="https://pinterest.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span
+                    className="fa fa-pinterest"
+                  />
+                </a>
+              </li>
+              <li
+                className="link"
+              >
+                <a
+                  href="https://instagram.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span
+                    className="fa fa-instagram"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>,
+          <div
+            className="overlay"
+            data-test="overlay"
+            style={
+              Object {
+                "backgroundColor": "#cdcdcd",
+              }
+            }
+          />,
+        ],
+        "className": "Navigation",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <ul
+                className="links"
+                data-test="nav-links"
+              >
+                <NavigationLink
+                  changeOverlayColor={[Function]}
+                  overlayColor="#cdcdcd"
+                  path="/"
+                  text="Lookbook"
+                />
+                <NavigationLink
+                  changeOverlayColor={[Function]}
+                  overlayColor="#e5554f"
+                  path="/shop"
+                  text="Shop"
+                />
+                <NavigationLink
+                  changeOverlayColor={[Function]}
+                  overlayColor="#bfced6"
+                  path="/contact"
+                  text="Contact"
+                />
+                <NavigationLink
+                  changeOverlayColor={[Function]}
+                  overlayColor="#e8e0d3"
+                  path="/about"
+                  text="About"
+                />
+              </ul>,
+              <ul
+                className="social-media"
+                data-test="social-media-links"
+              >
+                <li
+                  className="link"
+                >
+                  <a
+                    href="https://facebook.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      className="fa fa-facebook"
+                    />
+                  </a>
+                </li>
+                <li
+                  className="link"
+                >
+                  <a
+                    href="https://twitter.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      className="fa fa-twitter"
+                    />
+                  </a>
+                </li>
+                <li
+                  className="link"
+                >
+                  <a
+                    href="https://pinterest.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      className="fa fa-pinterest"
+                    />
+                  </a>
+                </li>
+                <li
+                  className="link"
+                >
+                  <a
+                    href="https://instagram.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span
+                      className="fa fa-instagram"
+                    />
+                  </a>
+                </li>
+              </ul>,
+            ],
+            "className": "navbar",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <NavigationLink
+                    changeOverlayColor={[Function]}
+                    overlayColor="#cdcdcd"
+                    path="/"
+                    text="Lookbook"
+                  />,
+                  <NavigationLink
+                    changeOverlayColor={[Function]}
+                    overlayColor="#e5554f"
+                    path="/shop"
+                    text="Shop"
+                  />,
+                  <NavigationLink
+                    changeOverlayColor={[Function]}
+                    overlayColor="#bfced6"
+                    path="/contact"
+                    text="Contact"
+                  />,
+                  <NavigationLink
+                    changeOverlayColor={[Function]}
+                    overlayColor="#e8e0d3"
+                    path="/about"
+                    text="About"
+                  />,
+                ],
+                "className": "links",
+                "data-test": "nav-links",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "/",
+                  "nodeType": "class",
+                  "props": Object {
+                    "changeOverlayColor": [Function],
+                    "overlayColor": "#cdcdcd",
+                    "path": "/",
+                    "text": "Lookbook",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "/shop",
+                  "nodeType": "class",
+                  "props": Object {
+                    "changeOverlayColor": [Function],
+                    "overlayColor": "#e5554f",
+                    "path": "/shop",
+                    "text": "Shop",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "/contact",
+                  "nodeType": "class",
+                  "props": Object {
+                    "changeOverlayColor": [Function],
+                    "overlayColor": "#bfced6",
+                    "path": "/contact",
+                    "text": "Contact",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "/about",
+                  "nodeType": "class",
+                  "props": Object {
+                    "changeOverlayColor": [Function],
+                    "overlayColor": "#e8e0d3",
+                    "path": "/about",
+                    "text": "About",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "ul",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="link"
+                  >
+                    <a
+                      href="https://facebook.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span
+                        className="fa fa-facebook"
+                      />
+                    </a>
+                  </li>,
+                  <li
+                    className="link"
+                  >
+                    <a
+                      href="https://twitter.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span
+                        className="fa fa-twitter"
+                      />
+                    </a>
+                  </li>,
+                  <li
+                    className="link"
+                  >
+                    <a
+                      href="https://pinterest.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span
+                        className="fa fa-pinterest"
+                      />
+                    </a>
+                  </li>,
+                  <li
+                    className="link"
+                  >
+                    <a
+                      href="https://instagram.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span
+                        className="fa fa-instagram"
+                      />
+                    </a>
+                  </li>,
+                ],
+                "className": "social-media",
+                "data-test": "social-media-links",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "https://facebook.com",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      href="https://facebook.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span
+                        className="fa fa-facebook"
+                      />
+                    </a>,
+                    "className": "link",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <span
+                        className="fa fa-facebook"
+                      />,
+                      "href": "https://facebook.com",
+                      "rel": "noopener noreferrer",
+                      "target": "_blank",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fa fa-facebook",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "span",
+                    },
+                    "type": "a",
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "https://twitter.com",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      href="https://twitter.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span
+                        className="fa fa-twitter"
+                      />
+                    </a>,
+                    "className": "link",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <span
+                        className="fa fa-twitter"
+                      />,
+                      "href": "https://twitter.com",
+                      "rel": "noopener noreferrer",
+                      "target": "_blank",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fa fa-twitter",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "span",
+                    },
+                    "type": "a",
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "https://pinterest.com",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      href="https://pinterest.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span
+                        className="fa fa-pinterest"
+                      />
+                    </a>,
+                    "className": "link",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <span
+                        className="fa fa-pinterest"
+                      />,
+                      "href": "https://pinterest.com",
+                      "rel": "noopener noreferrer",
+                      "target": "_blank",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fa fa-pinterest",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "span",
+                    },
+                    "type": "a",
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "https://instagram.com",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a
+                      href="https://instagram.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span
+                        className="fa fa-instagram"
+                      />
+                    </a>,
+                    "className": "link",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <span
+                        className="fa fa-instagram"
+                      />,
+                      "href": "https://instagram.com",
+                      "rel": "noopener noreferrer",
+                      "target": "_blank",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fa fa-instagram",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "span",
+                    },
+                    "type": "a",
+                  },
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "nav",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "overlay",
+            "data-test": "overlay",
+            "style": Object {
+              "backgroundColor": "#cdcdcd",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

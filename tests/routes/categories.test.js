@@ -5,7 +5,7 @@ const categoriesSeed = require('../../seeds/categories');
 const { populateCategories } = require('../_seed');
 
 const api = axios.create({
-	baseURL: 'http://localhost:3001/api',
+	baseURL: 'http://localhost:3002/api',
 })
 
 let server;
