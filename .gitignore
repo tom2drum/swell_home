@@ -1,3 +1,4 @@
 .idea/
 node_modules/
 client/src/css/**/*.css
+coverage/

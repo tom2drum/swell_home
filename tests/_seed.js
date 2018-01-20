@@ -1,9 +1,13 @@
-const { Category } = require('../models/Category');
+const mongoose = require('mongoose');
+
+// const { Category } = require('../models/category');
 
 const categories = require('../seeds/categories');
 
 const populateCategories = done => {
-  Category.remove({})
+	const Category = mongoose.model('category');
+
+	Category.remove({})
     .then(() => Category.insertMany(categories))
     .then(() => done());
 };

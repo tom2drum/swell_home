@@ -1,38 +1,42 @@
 const express = require('express');
-const mongoose = require('mongoose');
+const cors = require('cors');
 
-const { MONGODB_URI } = require('./config/_keys');
-require('./models/_models');
+const setupMongoose = require('./config/setup-mongoose');
+const setupModels = require('./config/setup-models');
+const getRouter = require('./routes');
 
+const start = async () => {
+  //	DB SETUP
+  const cleanupMongoose = await setupMongoose();
+  setupModels();
 
-//	DB CONNECTION
-mongoose.Promise = global.Promise;
-mongoose.connect(MONGODB_URI, {useMongoClient: true});
+  //	CREATING A SERVER
+  const app = express();
+	app.use(cors());
 
+  // 	ROUTES
+  app.use(getRouter());
 
-//	CREATING A SERVER
-const app = express();
+  //	CLIENT CONFIG
 
+  // Express only serves static assets in production
+  if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+  }
 
-// 	ROUTES
-require('./routes/routes')(app);
+  //	SERVER START
+  return new Promise(resolve => {
+		const port = process.env.PORT || 3001;
+    const server = app.listen(port, () => {
+      console.log(`Find the server at: http://localhost:${port}/`); // eslint-disable-line no-console
+      server.on('close', () => cleanupMongoose());
+      resolve(server);
+    });
+  });
+};
 
-
-//	CLIENT CONFIG
-
-// Express only serves static assets in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
+if (process.env.NODE_ENV !== 'test') {
+	start();
 }
 
-
-//	SERVER CONFIG
-app.set('port', process.env.PORT || 3001);
-
-app.listen(app.get('port'), () => {
-  console.log(`Find the server at: http://localhost:${app.get('port')}/`); // eslint-disable-line no-console
-});
-
-module.exports = {
-	app
-};
+module.exports = start;

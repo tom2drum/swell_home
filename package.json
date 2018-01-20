@@ -5,6 +5,7 @@
   "private": false,
   "dependencies": {
     "babel-core": "6.14.0",
+    "cors": "^2.8.4",
     "express": "^4.16.2",
     "mongoose": "^4.13.9",
     "node-mongo-seeds": "^2.3.2"
@@ -15,21 +16,31 @@
       "git add"
     ]
   },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/tests/setupTests.js"
+  },
   "scripts": {
     "start": "node server.js",
-    "dev": "concurrently \"yarn client\" \"yarn test-watch\"",
+    "dev": "concurrently \"yarn client\" \"yarn server\"",
     "server": "nodemon server.js",
     "client": "node start-client.js",
     "lint": "eslint . --ext .js,.jsx --quiet",
-		"test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha tests/**/*.test.js ",
-		"test-watch": "nodemon --exec \"npm test\"",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "precommit": "lint-staged",
-		"heroku-postbuild": "cd ./client && yarn --production=false && yarn build --production=false"
-	},
+    "heroku-postbuild": "cd ./client && yarn --production=false && yarn build --production=false"
+  },
   "devDependencies": {
+    "axios": "^0.17.1",
     "babel-cli": "^6.14.0",
     "babel-eslint": "^8.1.2",
+    "babel-jest": "^22.1.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "concurrently": "^3.1.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "2.1.1",
@@ -38,12 +49,13 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-prettier": "^2.4.0",
     "eslint-plugin-react": "7.4.0",
-    "expect": "^22.0.6",
     "husky": "^0.14.3",
+    "jest": "^22.1.1",
     "lint-staged": "^6.0.0",
-    "mocha": "^4.1.0",
     "nodemon": "^1.14.11",
     "prettier": "^1.10.2",
-    "supertest": "^3.0.0"
+    "react": "16",
+    "react-dom": "16",
+    "regenerator-runtime": "^0.11.1"
   }
 }
