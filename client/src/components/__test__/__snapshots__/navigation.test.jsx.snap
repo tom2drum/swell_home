@@ -9,7 +9,7 @@ ShallowWrapper {
     context={Object {}}
     location="/"
   >
-    <Unknown />
+    <withRouter(Navigation) />
   </StaticRouter>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -23,7 +23,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Unknown />,
+      "children": <withRouter(Navigation) />,
       "history": Object {
         "action": "POP",
         "block": [Function],
@@ -59,7 +59,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Unknown />,
+        "children": <withRouter(Navigation) />,
         "history": Object {
           "action": "POP",
           "block": [Function],

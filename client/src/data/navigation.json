@@ -1,0 +1,22 @@
+[
+	{
+		"path": "/",
+		"text": "Lookbook",
+		"overlayColor": "#cdcdcd"
+	},
+	{
+		"path": "/shop",
+		"text": "Shop",
+		"overlayColor": "#e5554f"
+	},
+	{
+		"path": "/contact",
+		"text": "Contact",
+		"overlayColor": "#bfced6"
+	},
+	{
+		"path": "/about",
+		"text": "About",
+		"overlayColor": "#e8e0d3"
+	}
+]

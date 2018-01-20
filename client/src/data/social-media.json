@@ -1,0 +1,18 @@
+[
+	{
+		"url": "https://facebook.com",
+		"cssClass": "fa fa-facebook"
+	},
+	{
+		"url": "https://twitter.com",
+		"cssClass": "fa fa-twitter"
+	},
+	{
+		"url": "https://pinterest.com",
+		"cssClass": "fa fa-pinterest"
+	},
+	{
+		"url": "https://instagram.com",
+		"cssClass": "fa fa-instagram"
+	}
+]
