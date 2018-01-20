@@ -57,10 +57,10 @@ class Navigation extends Component {
 		return (
       <div className="Navigation">
         <nav className="navbar">
-          <ul className="links">{this.renderNavLinks()}</ul>
-          <ul className="social-media">{Navigation.renderSocialMediaLinks()}</ul>
+          <ul className="links" data-test="nav-links">{this.renderNavLinks()}</ul>
+          <ul className="social-media" data-test="social-media-links">{Navigation.renderSocialMediaLinks()}</ul>
         </nav>
-        <div className="overlay" style={overlayStyle} />
+        <div className="overlay" style={overlayStyle} data-test="overlay" />
       </div>
     );
   }
@@ -71,3 +71,4 @@ Navigation.propTypes = {
 };
 
 export default withRouter(Navigation);
+export { Navigation };
