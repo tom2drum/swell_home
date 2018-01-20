@@ -8,8 +8,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "mongoose": "^4.13.9",
-    "node-mongo-seeds": "^2.3.2",
-    "prop-types": "^15.6.0"
+    "node-mongo-seeds": "^2.3.2"
   },
   "lint-staged": {
     "./**/*.{js,jsx,json}": [
@@ -56,8 +55,10 @@
     "lint-staged": "^6.0.0",
     "nodemon": "^1.14.11",
     "prettier": "^1.10.2",
+    "prop-types": "^15.6.0",
     "react": "16",
     "react-dom": "16",
+    "react-router-dom": "^4.2.2",
     "regenerator-runtime": "^0.11.1"
   }
 }
