@@ -1,5 +1,6 @@
 {
 	"undefined": "localhost/swell_home",
 	"dev": "localhost/swell_home",
+	"test": "localhost/swell_home_test",
 	"production": "localhost/PROD_DB_NAME"
 }
