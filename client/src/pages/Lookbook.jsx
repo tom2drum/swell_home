@@ -1,11 +1,13 @@
 /* eslint-disable consistent-return */
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import axios from 'axios';
 
 class Lookbook extends Component {
 	state = {
-		categories: []
+		categories: [],
+		activeSlide: 0
 	};
 
 	componentDidMount() {
@@ -19,7 +21,8 @@ class Lookbook extends Component {
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false
+		arrows: false,
+		autoplay: true
 	};
 
 	fetchCategories = async () => {
@@ -31,14 +34,15 @@ class Lookbook extends Component {
 	};
 
 	beforeSlideChange = (oldIndex, newIndex) => {
+		this.setState({ activeSlide: newIndex });
 		console.log(oldIndex, newIndex);
 	};
 
-	renderSliders = () => {
-		const { categories } = this.state;
+	renderSlider = () => {
+		const { categories, activeSlide } = this.state;
 
 		if (categories.length > 0) {
-			return categories.map(({ image, _id }) => {
+			const images = categories.map(({ image, _id }) => {
 				// eslint-disable-next-line import/no-dynamic-require,global-require
 				const src = require(`../img/categories/${image}`);
 				return (
@@ -47,17 +51,22 @@ class Lookbook extends Component {
 					</div>
 				);
 			});
+
+			return (
+				<div className="slider-wrapper">
+					<Slider className="Slider" {...this.sliderSettings}>
+						{images}
+					</Slider>
+					<Link className="slide-tag" to={`/catalog/${categories[activeSlide].slug}`}>{`View ${
+						categories[activeSlide].name
+					}`}</Link>
+				</div>
+			);
 		}
 	};
 
 	render() {
-		return (
-			<div className="Lookbook">
-				<Slider className="Slider" {...this.sliderSettings}>
-					{this.renderSliders()}
-				</Slider>
-			</div>
-		);
+		return <div className="Lookbook">{this.renderSlider()}</div>;
 	}
 }
 

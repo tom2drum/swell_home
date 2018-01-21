@@ -1,10 +1,13 @@
 @import "../base/vars.sass"
 
+.slider-wrapper
+	height: 100%
+
 .Slider
 	height: 100%
 
 	.slick-dots
-		bottom: 50px
+		bottom: 40px
 
 		li
 			margin: 0 40px
@@ -14,17 +17,17 @@
 					content: ''
 					background-color: $color-white
 					border-radius: 50%
-					width: 16px
-					height: 16px
+					width: 10px
+					height: 10px
 					opacity: 1
 
 			button:after
 				content: ''
 				position: absolute
-				top: calc(-10px / 2 + 15px / 2 - 3px)
-				left: calc(-10px / 2 + 15px / 2 - 3px)
-				width: 15px
-				height: 15px
+				top: calc(-10px / 2 + 10px / 2 - 1px)
+				left: calc(-10px / 2 + 10px / 2 - 1px)
+				width: 10px
+				height: 10px
 				background-color: transparent
 				border-radius: 50%
 				border: 1px solid $color-white
@@ -33,3 +36,32 @@
 			&.slick-active
 				button:after
 					transform: scale(3.5)
+
+.slide-tag
+	width: 200px
+	height: 50px
+	line-height: 50px
+	position: absolute
+	left: calc(50% - 100px)
+	bottom: 100px
+	color: $color-white
+	font-family: Lato, sans-serif
+	font-size: 1.2rem
+	text-align: center
+	z-index: 5
+
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		background-color: $color-black
+		width: 100%
+		height: 100%
+		border-radius: 25px
+		z-index: -1
+		transition: all 0.3s
+
+	&:hover
+		&::before
+			transform: scale(1.2)
