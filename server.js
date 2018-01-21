@@ -6,33 +6,33 @@ const setupModels = require('./config/setup-models');
 const getRouter = require('./routes');
 
 const start = async () => {
-  //	DB SETUP
-  const cleanupMongoose = await setupMongoose();
-  setupModels();
+	//	DB SETUP
+	const cleanupMongoose = await setupMongoose();
+	setupModels();
 
-  //	CREATING A SERVER
-  const app = express();
+	//	CREATING A SERVER
+	const app = express();
 	app.use(cors());
 
-  // 	ROUTES
-  app.use(getRouter());
+	// 	ROUTES
+	app.use(getRouter());
 
-  //	CLIENT CONFIG
+	//	CLIENT CONFIG
 
-  // Express only serves static assets in production
-  if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'));
-  }
+	// Express only serves static assets in production
+	if (process.env.NODE_ENV === 'production') {
+		app.use(express.static('client/build'));
+	}
 
-  //	SERVER START
-  return new Promise(resolve => {
+	//	SERVER START
+	return new Promise(resolve => {
 		const port = process.env.PORT || 3001;
-    const server = app.listen(port, () => {
-      console.log(`Find the server at: http://localhost:${port}/`); // eslint-disable-line no-console
-      server.on('close', () => cleanupMongoose());
-      resolve(server);
-    });
-  });
+		const server = app.listen(port, () => {
+			console.log(`Find the server at: http://localhost:${port}/`); // eslint-disable-line no-console
+			server.on('close', () => cleanupMongoose());
+			resolve(server);
+		});
+	});
 };
 
 if (process.env.NODE_ENV !== 'test') {

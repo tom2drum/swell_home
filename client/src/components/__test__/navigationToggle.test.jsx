@@ -1,20 +1,16 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { shallow } from 'enzyme';
 
 import NavigationToggle from '../NavigationToggle';
+import { sel } from '../../../../tests/utils';
 
 function mountComponent(props = {}) {
 	const propsToUse = {
 		onClickCallback: jest.fn(),
-		...props,
+		...props
 	};
 
-	return shallow(<NavigationToggle {...propsToUse} />)
-}
-
-function sel(id) {
-	return `[data-test="${id}"]`
+	return shallow(<NavigationToggle {...propsToUse} />);
 }
 
 test('the component mounts with defaults', () => {

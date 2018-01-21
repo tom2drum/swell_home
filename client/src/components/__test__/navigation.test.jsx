@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { StaticRouter } from 'react-router-dom';
@@ -6,30 +5,31 @@ import { StaticRouter } from 'react-router-dom';
 import { Navigation } from '../Navigation';
 import navLinks from '../../data/navigation.json';
 import smLinks from '../../data/social-media.json';
+import { sel } from '../../../../tests/utils';
 
 function mountComponent(props = {}, isShallow = true) {
 	const propsToUse = {
-		'location': {
+		location: {
 			pathname: '/'
 		},
-		...props,
+		...props
 	};
 
 	if (isShallow) {
-		return shallow(<Navigation {...propsToUse} />)
+		return shallow(<Navigation {...propsToUse} />);
 	}
 
-	return mount(<StaticRouter context={{}}><Navigation {...propsToUse} /></StaticRouter>);
-}
-
-function sel(id) {
-	return `[data-test="${id}"]`
+	return mount(
+		<StaticRouter context={{}}>
+			<Navigation {...propsToUse} />
+		</StaticRouter>
+	);
 }
 
 test('the component mounts with defaults', () => {
-  const wrapper = mountComponent();
+	const wrapper = mountComponent();
 
-  expect(wrapper).toMatchSnapshot();
+	expect(wrapper).toMatchSnapshot();
 });
 
 test('it renders correct number of navigation and social media links', () => {
@@ -43,7 +43,7 @@ test('it renders correct number of navigation and social media links', () => {
 
 test('method "getDefaultOverlayColor()" returns correct color', () => {
 	const pathname = '/contact';
-	const wrapper = mountComponent({location: {pathname}});
+	const wrapper = mountComponent({ location: { pathname } });
 	const color = wrapper.instance().getDefaultOverlayColor();
 
 	expect(color).toBe(navLinks.filter(item => item.path === pathname)[0].overlayColor);
@@ -58,13 +58,13 @@ test('method "changeOverlayColorHandler()" changes overlay color', () => {
 	wrapper.instance().changeOverlayColorHandler(newColor);
 	wrapper.update();
 	let overlayStyle = wrapper.find(sel('overlay')).get(0).props.style;
-	expect(overlayStyle).toEqual({backgroundColor: newColor});
+	expect(overlayStyle).toEqual({ backgroundColor: newColor });
 
 	//	if color is not provided, we expect overlay to have default color
 	wrapper.instance().changeOverlayColorHandler();
 	wrapper.update();
 	overlayStyle = wrapper.find(sel('overlay')).get(0).props.style;
-	expect(overlayStyle).toEqual({backgroundColor});
+	expect(overlayStyle).toEqual({ backgroundColor });
 });
 
 test('it adds "is-open" class when toggle clicked', () => {

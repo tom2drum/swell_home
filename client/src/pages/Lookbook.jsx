@@ -1,10 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class Lookbook extends Component {
 	render() {
-		return (
-			<div>content</div>
-		)
+		return <div>content</div>;
 	}
 }
 
