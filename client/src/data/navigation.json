@@ -2,21 +2,21 @@
 	{
 		"path": "/",
 		"text": "Lookbook",
-		"overlayColor": "#cdcdcd"
+		"overlayColor": "#a9b7b4"
 	},
 	{
 		"path": "/shop",
 		"text": "Shop",
-		"overlayColor": "#e5554f"
+		"overlayColor": "#ec6761"
 	},
 	{
 		"path": "/contact",
 		"text": "Contact",
-		"overlayColor": "#bfced6"
+		"overlayColor": "#f7bfb1"
 	},
 	{
 		"path": "/about",
 		"text": "About",
-		"overlayColor": "#e8e0d3"
+		"overlayColor": "#f9ca5c"
 	}
 ]

@@ -1,8 +1,8 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { shallow } from 'enzyme';
 
 import NavigationLink from '../NavigationLink';
+import { sel } from '../../../../tests/utils';
 
 function mountComponent(props = {}) {
 	const propsToUse = {
@@ -11,14 +11,10 @@ function mountComponent(props = {}) {
 		text: '',
 		overlayColor: '',
 		to: '',
-		...props,
+		...props
 	};
 
-	return shallow(<NavigationLink {...propsToUse} />)
-}
-
-function sel(id) {
-	return `[data-test="${id}"]`
+	return shallow(<NavigationLink {...propsToUse} />);
 }
 
 test('the component mounts with defaults', () => {
@@ -28,15 +24,18 @@ test('the component mounts with defaults', () => {
 
 test('it renders the given text', () => {
 	const text = 'foo';
-	const wrapper = mountComponent({text});
-	const innerText = wrapper.find(sel('nav-link')).children().text();
+	const wrapper = mountComponent({ text });
+	const innerText = wrapper
+		.find(sel('nav-link'))
+		.children()
+		.text();
 	expect(innerText).toBe(text);
 });
 
 test('it call parent handler when user hovers over', () => {
 	const changeOverlayColor = jest.fn();
 	const overlayColor = 'white';
-	const wrapper = mountComponent({changeOverlayColor, overlayColor});
+	const wrapper = mountComponent({ changeOverlayColor, overlayColor });
 	const el = wrapper.find(sel('nav-link'));
 
 	el.simulate('mouseenter');

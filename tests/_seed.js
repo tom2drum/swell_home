@@ -8,8 +8,8 @@ const populateCategories = done => {
 	const Category = mongoose.model('category');
 
 	Category.remove({})
-    .then(() => Category.insertMany(categories))
-    .then(() => done());
+		.then(() => Category.insertMany(categories))
+		.then(() => done());
 };
 
 module.exports = { populateCategories };
