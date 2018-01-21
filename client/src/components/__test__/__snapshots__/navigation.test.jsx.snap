@@ -34,25 +34,25 @@ ShallowWrapper {
             className="links"
             data-test="nav-links"
           >
-            <NavigationLink
+            <withRouter(NavigationLink)
               changeOverlayColor={[Function]}
               overlayColor="#a9b7b4"
               path="/"
               text="Lookbook"
             />
-            <NavigationLink
+            <withRouter(NavigationLink)
               changeOverlayColor={[Function]}
               overlayColor="#ec6761"
               path="/shop"
               text="Shop"
             />
-            <NavigationLink
+            <withRouter(NavigationLink)
               changeOverlayColor={[Function]}
               overlayColor="#f7bfb1"
               path="/contact"
               text="Contact"
             />
-            <NavigationLink
+            <withRouter(NavigationLink)
               changeOverlayColor={[Function]}
               overlayColor="#f9ca5c"
               path="/about"
@@ -153,25 +153,25 @@ ShallowWrapper {
               className="links"
               data-test="nav-links"
             >
-              <NavigationLink
+              <withRouter(NavigationLink)
                 changeOverlayColor={[Function]}
                 overlayColor="#a9b7b4"
                 path="/"
                 text="Lookbook"
               />
-              <NavigationLink
+              <withRouter(NavigationLink)
                 changeOverlayColor={[Function]}
                 overlayColor="#ec6761"
                 path="/shop"
                 text="Shop"
               />
-              <NavigationLink
+              <withRouter(NavigationLink)
                 changeOverlayColor={[Function]}
                 overlayColor="#f7bfb1"
                 path="/contact"
                 text="Contact"
               />
-              <NavigationLink
+              <withRouter(NavigationLink)
                 changeOverlayColor={[Function]}
                 overlayColor="#f9ca5c"
                 path="/about"
@@ -246,25 +246,25 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <NavigationLink
+                <withRouter(NavigationLink)
                   changeOverlayColor={[Function]}
                   overlayColor="#a9b7b4"
                   path="/"
                   text="Lookbook"
                 />,
-                <NavigationLink
+                <withRouter(NavigationLink)
                   changeOverlayColor={[Function]}
                   overlayColor="#ec6761"
                   path="/shop"
                   text="Shop"
                 />,
-                <NavigationLink
+                <withRouter(NavigationLink)
                   changeOverlayColor={[Function]}
                   overlayColor="#f7bfb1"
                   path="/contact"
                   text="Contact"
                 />,
-                <NavigationLink
+                <withRouter(NavigationLink)
                   changeOverlayColor={[Function]}
                   overlayColor="#f9ca5c"
                   path="/about"
@@ -279,7 +279,7 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": "/",
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "changeOverlayColor": [Function],
                   "overlayColor": "#a9b7b4",
@@ -293,7 +293,7 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": "/shop",
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "changeOverlayColor": [Function],
                   "overlayColor": "#ec6761",
@@ -307,7 +307,7 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": "/contact",
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "changeOverlayColor": [Function],
                   "overlayColor": "#f7bfb1",
@@ -321,7 +321,7 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": "/about",
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "changeOverlayColor": [Function],
                   "overlayColor": "#f9ca5c",
@@ -620,25 +620,25 @@ ShallowWrapper {
               className="links"
               data-test="nav-links"
             >
-              <NavigationLink
+              <withRouter(NavigationLink)
                 changeOverlayColor={[Function]}
                 overlayColor="#a9b7b4"
                 path="/"
                 text="Lookbook"
               />
-              <NavigationLink
+              <withRouter(NavigationLink)
                 changeOverlayColor={[Function]}
                 overlayColor="#ec6761"
                 path="/shop"
                 text="Shop"
               />
-              <NavigationLink
+              <withRouter(NavigationLink)
                 changeOverlayColor={[Function]}
                 overlayColor="#f7bfb1"
                 path="/contact"
                 text="Contact"
               />
-              <NavigationLink
+              <withRouter(NavigationLink)
                 changeOverlayColor={[Function]}
                 overlayColor="#f9ca5c"
                 path="/about"
@@ -739,25 +739,25 @@ ShallowWrapper {
                 className="links"
                 data-test="nav-links"
               >
-                <NavigationLink
+                <withRouter(NavigationLink)
                   changeOverlayColor={[Function]}
                   overlayColor="#a9b7b4"
                   path="/"
                   text="Lookbook"
                 />
-                <NavigationLink
+                <withRouter(NavigationLink)
                   changeOverlayColor={[Function]}
                   overlayColor="#ec6761"
                   path="/shop"
                   text="Shop"
                 />
-                <NavigationLink
+                <withRouter(NavigationLink)
                   changeOverlayColor={[Function]}
                   overlayColor="#f7bfb1"
                   path="/contact"
                   text="Contact"
                 />
-                <NavigationLink
+                <withRouter(NavigationLink)
                   changeOverlayColor={[Function]}
                   overlayColor="#f9ca5c"
                   path="/about"
@@ -832,25 +832,25 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <NavigationLink
+                  <withRouter(NavigationLink)
                     changeOverlayColor={[Function]}
                     overlayColor="#a9b7b4"
                     path="/"
                     text="Lookbook"
                   />,
-                  <NavigationLink
+                  <withRouter(NavigationLink)
                     changeOverlayColor={[Function]}
                     overlayColor="#ec6761"
                     path="/shop"
                     text="Shop"
                   />,
-                  <NavigationLink
+                  <withRouter(NavigationLink)
                     changeOverlayColor={[Function]}
                     overlayColor="#f7bfb1"
                     path="/contact"
                     text="Contact"
                   />,
-                  <NavigationLink
+                  <withRouter(NavigationLink)
                     changeOverlayColor={[Function]}
                     overlayColor="#f9ca5c"
                     path="/about"
@@ -865,7 +865,7 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": "/",
-                  "nodeType": "class",
+                  "nodeType": "function",
                   "props": Object {
                     "changeOverlayColor": [Function],
                     "overlayColor": "#a9b7b4",
@@ -879,7 +879,7 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": "/shop",
-                  "nodeType": "class",
+                  "nodeType": "function",
                   "props": Object {
                     "changeOverlayColor": [Function],
                     "overlayColor": "#ec6761",
@@ -893,7 +893,7 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": "/contact",
-                  "nodeType": "class",
+                  "nodeType": "function",
                   "props": Object {
                     "changeOverlayColor": [Function],
                     "overlayColor": "#f7bfb1",
@@ -907,7 +907,7 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": "/about",
-                  "nodeType": "class",
+                  "nodeType": "function",
                   "props": Object {
                     "changeOverlayColor": [Function],
                     "overlayColor": "#f9ca5c",

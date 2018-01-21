@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 class NavigationLink extends Component {
@@ -23,15 +23,17 @@ class NavigationLink extends Component {
 		const { color } = this.state;
 		return (
 			<li className="link">
-				<Link
+				<NavLink
+					exact
 					to={this.props.path}
+					activeStyle={{ color: this.props.overlayColor }}
 					onMouseEnter={this.onMouseEnterHandler}
 					onMouseLeave={this.onMouseLeaveHandler}
 					data-test="nav-link"
 					style={{ color }}
 				>
 					{this.props.text}
-				</Link>
+				</NavLink>
 			</li>
 		);
 	}

@@ -30,7 +30,7 @@ ShallowWrapper {
         replace={false}
         style={
           Object {
-            "color": "#101010",
+            "color": undefined,
           }
         }
         to=""
@@ -51,7 +51,7 @@ ShallowWrapper {
         "onMouseLeave": [Function],
         "replace": false,
         "style": Object {
-          "color": "#101010",
+          "color": undefined,
         },
         "to": "",
       },
@@ -74,7 +74,7 @@ ShallowWrapper {
           replace={false}
           style={
             Object {
-              "color": "#101010",
+              "color": undefined,
             }
           }
           to=""
@@ -95,7 +95,7 @@ ShallowWrapper {
           "onMouseLeave": [Function],
           "replace": false,
           "style": Object {
-            "color": "#101010",
+            "color": undefined,
           },
           "to": "",
         },
