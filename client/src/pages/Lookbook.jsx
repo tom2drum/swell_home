@@ -57,16 +57,21 @@ class Lookbook extends Component {
 					<Slider className="Slider" {...this.sliderSettings}>
 						{images}
 					</Slider>
-					<Link className="slide-tag" to={`/catalog/${categories[activeSlide].slug}`}>{`View ${
-						categories[activeSlide].name
-					}`}</Link>
+					<Link className="slide-tag" to={`/catalog/${categories[activeSlide].slug}`}>
+						{`View ${categories[activeSlide].name}`}
+					</Link>
 				</div>
 			);
 		}
 	};
 
 	render() {
-		return <div className="Lookbook">{this.renderSlider()}</div>;
+		return (
+			<div className="Lookbook">
+				{this.renderSlider()}
+				<h1 className="heading">Swell.</h1>
+			</div>
+		);
 	}
 }
 
