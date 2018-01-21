@@ -9,15 +9,17 @@ branches:
   only:
   - master
 
+env:
+  - TEST_DIR=tilt-client
+  - TEST_DIR=tilt-server
+
 cache:
   directories:
     - "node_modules"
+    - "./client/node_modules"
   yarn: true
 
-before_script:
-	- yarn
-	- cd client
-	- yarn
+script: cd $TEST_DIR && yarn install && yarn test
 
 after_success:
 	- ./node_modules/coveralls/bin/coveralls.js
