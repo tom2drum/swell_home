@@ -1,34 +1,42 @@
 [
 	{
 		"name": "Kaptain",
+		"slug": "kaptain",
 		"image": "kaptain_desktop-1920x1080.jpg"
 	},
 	{
 		"name": "Kube",
+		"slug": "kube",
 		"image": "Kube_Desktop-1920x1080.jpg"
 	},
 	{
 		"name": "Rollo",
+		"slug": "rollo",
 		"image": "Rollo_Desktop-1920x1080.jpg"
 	},
 	{
 		"name": "Orbit",
+		"slug": "orbit",
 		"image": "Orbit_Desktop-1920x1080.jpg"
 	},
 	{
 		"name": "Nordik",
+		"slug": "nordik",
 		"image": "Nordik_Desktop-1920x1080.jpg"
 	},
 	{
 		"name": "Fib",
+		"slug": "fib",
 		"image": "Fib_Desktop-1920x1080.jpg"
 	},
 	{
 		"name": "Boto",
+		"slug": "boto",
 		"image": "Boto_Desktop-1920x1080.jpg"
 	},
 	{
 		"name": "Pop",
+		"slug": "pop",
 		"image": "Pop_Desktop-1920x1080.jpg"
 	}
 ]

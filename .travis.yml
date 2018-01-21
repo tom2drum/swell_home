@@ -1,7 +1,6 @@
 language: node_js
 
-node_js:
-  - "8"
+node_js: "8"
 
 services: mongodb
 
@@ -9,7 +8,11 @@ branches:
   only:
   - master
 
+
 cache:
   directories:
     - "node_modules"
+    - "./client/node_modules"
   yarn: true
+
+after_success: yarn add coveralls && cat ./coverage/lcov.info | coveralls

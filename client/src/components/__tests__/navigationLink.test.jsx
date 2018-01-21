@@ -1,41 +1,36 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-
 import NavigationLink from '../NavigationLink';
-import { sel } from '../../../../tests/utils';
+import { sel, TestHelper } from '../../../../tests/utils';
 
-function mountComponent(props = {}) {
-	const propsToUse = {
-		changeOverlayColor() {},
-		path: '',
-		text: '',
-		overlayColor: '',
-		to: '',
-		...props
-	};
+const defaultProps = {
+	changeOverlayColor() {},
+	path: '',
+	text: '',
+	overlayColor: '',
+	to: ''
+};
 
-	return shallow(<NavigationLink {...propsToUse} />);
-}
+const helper = new TestHelper(NavigationLink, defaultProps);
 
 test('the component mounts with defaults', () => {
-	const wrapper = mountComponent();
+	const wrapper = helper.mountComponent({}, true);
 	expect(wrapper).toMatchSnapshot();
 });
 
 test('it renders the given text', () => {
 	const text = 'foo';
-	const wrapper = mountComponent({ text });
+	const wrapper = helper.mountComponent({ text }, true);
 	const innerText = wrapper
 		.find(sel('nav-link'))
 		.children()
 		.text();
+
 	expect(innerText).toBe(text);
 });
 
 test('it call parent handler when user hovers over', () => {
 	const changeOverlayColor = jest.fn();
 	const overlayColor = 'white';
-	const wrapper = mountComponent({ changeOverlayColor, overlayColor });
+	const wrapper = helper.mountComponent({ changeOverlayColor, overlayColor }, true);
 	const el = wrapper.find(sel('nav-link'));
 
 	el.simulate('mouseenter');
