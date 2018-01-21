@@ -23,11 +23,18 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Link
+      "children": <NavLink
+        activeClassName="active"
+        activeStyle={
+          Object {
+            "color": "",
+          }
+        }
+        ariaCurrent="true"
         data-test="nav-link"
+        exact={true}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        replace={false}
         style={
           Object {
             "color": undefined,
@@ -36,20 +43,25 @@ ShallowWrapper {
         to=""
       >
         
-      </Link>,
+      </NavLink>,
       "className": "link",
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
+        "activeClassName": "active",
+        "activeStyle": Object {
+          "color": "",
+        },
+        "ariaCurrent": "true",
         "children": "",
         "data-test": "nav-link",
+        "exact": true,
         "onMouseEnter": [Function],
         "onMouseLeave": [Function],
-        "replace": false,
         "style": Object {
           "color": undefined,
         },
@@ -67,11 +79,18 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Link
+        "children": <NavLink
+          activeClassName="active"
+          activeStyle={
+            Object {
+              "color": "",
+            }
+          }
+          ariaCurrent="true"
           data-test="nav-link"
+          exact={true}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-          replace={false}
           style={
             Object {
               "color": undefined,
@@ -80,20 +99,25 @@ ShallowWrapper {
           to=""
         >
           
-        </Link>,
+        </NavLink>,
         "className": "link",
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
+          "activeClassName": "active",
+          "activeStyle": Object {
+            "color": "",
+          },
+          "ariaCurrent": "true",
           "children": "",
           "data-test": "nav-link",
+          "exact": true,
           "onMouseEnter": [Function],
           "onMouseLeave": [Function],
-          "replace": false,
           "style": Object {
             "color": undefined,
           },

@@ -49,15 +49,16 @@ test('method "getDefaultOverlayColor()" returns correct color', () => {
 	expect(color).toBe(navLinks.filter(item => item.path === pathname)[0].overlayColor);
 });
 
-test('it changes overlay color when user hover over a navigation link', () => {
+xtest('it changes overlay color when user hover over a navigation link', () => {
 	const index = 1;
 	const wrapper = mountComponent({}, false);
 	const linkToHover = wrapper
-		.find(sel('nav-link'))
+		.find(sel('nav-links'))
 		.children()
 		.at(index);
 
-	linkToHover.simulate('mouseenter');
+	linkToHover.simulate('mouseEnter');
+	wrapper.update();
 	let overlayColor = wrapper.find(sel('overlay')).get(0).props.style.backgroundColor;
 	expect(overlayColor).toBe(navLinks[index].overlayColor);
 
@@ -66,7 +67,25 @@ test('it changes overlay color when user hover over a navigation link', () => {
 	expect(overlayColor).toBe(navLinks[0].overlayColor);
 });
 
-test('it adds "is-open" class when toggle clicked', () => {
+test('method "changeOverlayColorHandler()" changes overlay color', () => {
+	const wrapper = mountComponent();
+	const backgroundColor = wrapper.instance().getDefaultOverlayColor();
+	const newColor = '#001122';
+
+	//	if color is provided, we expect overlay to have new color
+	wrapper.instance().changeOverlayColorHandler(newColor);
+	wrapper.update();
+	let overlayStyle = wrapper.find(sel('overlay')).get(0).props.style;
+	expect(overlayStyle).toEqual({ backgroundColor: newColor });
+
+	//	if color is not provided, we expect overlay to have default color
+	wrapper.instance().changeOverlayColorHandler();
+	wrapper.update();
+	overlayStyle = wrapper.find(sel('overlay')).get(0).props.style;
+	expect(overlayStyle).toEqual({ backgroundColor });
+});
+
+test('it switch "is-open" class when toggle clicked', () => {
 	const wrapper = mountComponent({}, false);
 	const toggle = wrapper.find(sel('nav-toggle'));
 
