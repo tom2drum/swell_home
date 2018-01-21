@@ -1,11 +1,13 @@
 @import "../base/vars.sass"
+@import "../base/animations.scss"
 
 .Navigation
 	position: absolute
 	top: 0
-	left: 0
+	left: -500px
 	height: 100vh
 	display: flex
+	transition: left 0.5s ease-out
 
 	.navbar
 		position: relative
@@ -23,6 +25,7 @@
 
 			.link
 				margin: 15px 0
+				transform: translate3d(-100%, 0, 0)
 
 		.social-media
 			width: 100%
@@ -35,11 +38,27 @@
 
 			.link
 				margin: 0 30px
+				transform: translate3d(0, 100px, 0)
 				a
 					@include circle-bg($color-grey, 30px, 1.15)
 
 	.overlay
-		width: calc(100vw - 500px)
+		width: 0
 		height: 100vh
 		background-color: $color-yellow
+		opacity: 0
+		transition: all 0.5s ease-out
+
+
+	&.is-open
+		left: 0
+		.links .link
+			animation: slideInLeft 0.5s forwards 0.3s
+
+		.social-media .link
+			animation: slideInUp 0.5s forwards 0.3s
+
+
+	&.is-open .overlay
 		opacity: 0.5
+		width: calc(100vw - 500px)

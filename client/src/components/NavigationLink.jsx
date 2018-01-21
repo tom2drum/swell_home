@@ -3,15 +3,24 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 class NavigationLink extends Component {
+	state = {
+		color: this.defaultColor
+	};
+
 	onMouseEnterHandler = () => {
 		this.props.changeOverlayColor(this.props.overlayColor);
+		this.setState({ color: this.props.overlayColor });
 	};
 
 	onMouseLeaveHandler = () => {
 		this.props.changeOverlayColor();
+		this.setState({ color: this.defaultColor });
 	};
 
+	defaultColor = '#101010';
+
 	render() {
+		const { color } = this.state;
 		return (
 			<li className="link">
 				<Link
@@ -19,6 +28,7 @@ class NavigationLink extends Component {
 					onMouseEnter={this.onMouseEnterHandler}
 					onMouseLeave={this.onMouseLeaveHandler}
 					data-test="nav-link"
+					style={{ color }}
 				>
 					{this.props.text}
 				</Link>

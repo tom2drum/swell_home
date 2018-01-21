@@ -52,7 +52,6 @@ test('method "getDefaultOverlayColor()" returns correct color', () => {
 test('it changes overlay color when user hover over a navigation link', () => {
 	const index = 1;
 	const wrapper = mountComponent({}, false);
-	// const backgroundColor = wrapper.instance().getDefaultOverlayColor();
 	const linkToHover = wrapper
 		.find(sel('nav-link'))
 		.children()

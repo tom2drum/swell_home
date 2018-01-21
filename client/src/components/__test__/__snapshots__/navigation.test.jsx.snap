@@ -36,25 +36,25 @@ ShallowWrapper {
           >
             <NavigationLink
               changeOverlayColor={[Function]}
-              overlayColor="#cdcdcd"
+              overlayColor="#a9b7b4"
               path="/"
               text="Lookbook"
             />
             <NavigationLink
               changeOverlayColor={[Function]}
-              overlayColor="#e5554f"
+              overlayColor="#ec6761"
               path="/shop"
               text="Shop"
             />
             <NavigationLink
               changeOverlayColor={[Function]}
-              overlayColor="#bfced6"
+              overlayColor="#f7bfb1"
               path="/contact"
               text="Contact"
             />
             <NavigationLink
               changeOverlayColor={[Function]}
-              overlayColor="#e8e0d3"
+              overlayColor="#f9ca5c"
               path="/about"
               text="About"
             />
@@ -122,7 +122,7 @@ ShallowWrapper {
           data-test="overlay"
           style={
             Object {
-              "backgroundColor": "#cdcdcd",
+              "backgroundColor": "#a9b7b4",
             }
           }
         />,
@@ -155,25 +155,25 @@ ShallowWrapper {
             >
               <NavigationLink
                 changeOverlayColor={[Function]}
-                overlayColor="#cdcdcd"
+                overlayColor="#a9b7b4"
                 path="/"
                 text="Lookbook"
               />
               <NavigationLink
                 changeOverlayColor={[Function]}
-                overlayColor="#e5554f"
+                overlayColor="#ec6761"
                 path="/shop"
                 text="Shop"
               />
               <NavigationLink
                 changeOverlayColor={[Function]}
-                overlayColor="#bfced6"
+                overlayColor="#f7bfb1"
                 path="/contact"
                 text="Contact"
               />
               <NavigationLink
                 changeOverlayColor={[Function]}
-                overlayColor="#e8e0d3"
+                overlayColor="#f9ca5c"
                 path="/about"
                 text="About"
               />
@@ -248,25 +248,25 @@ ShallowWrapper {
               "children": Array [
                 <NavigationLink
                   changeOverlayColor={[Function]}
-                  overlayColor="#cdcdcd"
+                  overlayColor="#a9b7b4"
                   path="/"
                   text="Lookbook"
                 />,
                 <NavigationLink
                   changeOverlayColor={[Function]}
-                  overlayColor="#e5554f"
+                  overlayColor="#ec6761"
                   path="/shop"
                   text="Shop"
                 />,
                 <NavigationLink
                   changeOverlayColor={[Function]}
-                  overlayColor="#bfced6"
+                  overlayColor="#f7bfb1"
                   path="/contact"
                   text="Contact"
                 />,
                 <NavigationLink
                   changeOverlayColor={[Function]}
-                  overlayColor="#e8e0d3"
+                  overlayColor="#f9ca5c"
                   path="/about"
                   text="About"
                 />,
@@ -282,7 +282,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "changeOverlayColor": [Function],
-                  "overlayColor": "#cdcdcd",
+                  "overlayColor": "#a9b7b4",
                   "path": "/",
                   "text": "Lookbook",
                 },
@@ -296,7 +296,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "changeOverlayColor": [Function],
-                  "overlayColor": "#e5554f",
+                  "overlayColor": "#ec6761",
                   "path": "/shop",
                   "text": "Shop",
                 },
@@ -310,7 +310,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "changeOverlayColor": [Function],
-                  "overlayColor": "#bfced6",
+                  "overlayColor": "#f7bfb1",
                   "path": "/contact",
                   "text": "Contact",
                 },
@@ -324,7 +324,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "changeOverlayColor": [Function],
-                  "overlayColor": "#e8e0d3",
+                  "overlayColor": "#f9ca5c",
                   "path": "/about",
                   "text": "About",
                 },
@@ -593,7 +593,7 @@ ShallowWrapper {
           "className": "overlay",
           "data-test": "overlay",
           "style": Object {
-            "backgroundColor": "#cdcdcd",
+            "backgroundColor": "#a9b7b4",
           },
         },
         "ref": null,
@@ -622,25 +622,25 @@ ShallowWrapper {
             >
               <NavigationLink
                 changeOverlayColor={[Function]}
-                overlayColor="#cdcdcd"
+                overlayColor="#a9b7b4"
                 path="/"
                 text="Lookbook"
               />
               <NavigationLink
                 changeOverlayColor={[Function]}
-                overlayColor="#e5554f"
+                overlayColor="#ec6761"
                 path="/shop"
                 text="Shop"
               />
               <NavigationLink
                 changeOverlayColor={[Function]}
-                overlayColor="#bfced6"
+                overlayColor="#f7bfb1"
                 path="/contact"
                 text="Contact"
               />
               <NavigationLink
                 changeOverlayColor={[Function]}
-                overlayColor="#e8e0d3"
+                overlayColor="#f9ca5c"
                 path="/about"
                 text="About"
               />
@@ -708,7 +708,7 @@ ShallowWrapper {
             data-test="overlay"
             style={
               Object {
-                "backgroundColor": "#cdcdcd",
+                "backgroundColor": "#a9b7b4",
               }
             }
           />,
@@ -741,25 +741,25 @@ ShallowWrapper {
               >
                 <NavigationLink
                   changeOverlayColor={[Function]}
-                  overlayColor="#cdcdcd"
+                  overlayColor="#a9b7b4"
                   path="/"
                   text="Lookbook"
                 />
                 <NavigationLink
                   changeOverlayColor={[Function]}
-                  overlayColor="#e5554f"
+                  overlayColor="#ec6761"
                   path="/shop"
                   text="Shop"
                 />
                 <NavigationLink
                   changeOverlayColor={[Function]}
-                  overlayColor="#bfced6"
+                  overlayColor="#f7bfb1"
                   path="/contact"
                   text="Contact"
                 />
                 <NavigationLink
                   changeOverlayColor={[Function]}
-                  overlayColor="#e8e0d3"
+                  overlayColor="#f9ca5c"
                   path="/about"
                   text="About"
                 />
@@ -834,25 +834,25 @@ ShallowWrapper {
                 "children": Array [
                   <NavigationLink
                     changeOverlayColor={[Function]}
-                    overlayColor="#cdcdcd"
+                    overlayColor="#a9b7b4"
                     path="/"
                     text="Lookbook"
                   />,
                   <NavigationLink
                     changeOverlayColor={[Function]}
-                    overlayColor="#e5554f"
+                    overlayColor="#ec6761"
                     path="/shop"
                     text="Shop"
                   />,
                   <NavigationLink
                     changeOverlayColor={[Function]}
-                    overlayColor="#bfced6"
+                    overlayColor="#f7bfb1"
                     path="/contact"
                     text="Contact"
                   />,
                   <NavigationLink
                     changeOverlayColor={[Function]}
-                    overlayColor="#e8e0d3"
+                    overlayColor="#f9ca5c"
                     path="/about"
                     text="About"
                   />,
@@ -868,7 +868,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "changeOverlayColor": [Function],
-                    "overlayColor": "#cdcdcd",
+                    "overlayColor": "#a9b7b4",
                     "path": "/",
                     "text": "Lookbook",
                   },
@@ -882,7 +882,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "changeOverlayColor": [Function],
-                    "overlayColor": "#e5554f",
+                    "overlayColor": "#ec6761",
                     "path": "/shop",
                     "text": "Shop",
                   },
@@ -896,7 +896,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "changeOverlayColor": [Function],
-                    "overlayColor": "#bfced6",
+                    "overlayColor": "#f7bfb1",
                     "path": "/contact",
                     "text": "Contact",
                   },
@@ -910,7 +910,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "changeOverlayColor": [Function],
-                    "overlayColor": "#e8e0d3",
+                    "overlayColor": "#f9ca5c",
                     "path": "/about",
                     "text": "About",
                   },
@@ -1179,7 +1179,7 @@ ShallowWrapper {
             "className": "overlay",
             "data-test": "overlay",
             "style": Object {
-              "backgroundColor": "#cdcdcd",
+              "backgroundColor": "#a9b7b4",
             },
           },
           "ref": null,

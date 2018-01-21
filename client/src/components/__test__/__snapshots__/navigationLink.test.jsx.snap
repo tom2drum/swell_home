@@ -28,6 +28,11 @@ ShallowWrapper {
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
         replace={false}
+        style={
+          Object {
+            "color": "#101010",
+          }
+        }
         to=""
       >
         
@@ -45,6 +50,9 @@ ShallowWrapper {
         "onMouseEnter": [Function],
         "onMouseLeave": [Function],
         "replace": false,
+        "style": Object {
+          "color": "#101010",
+        },
         "to": "",
       },
       "ref": null,
@@ -64,6 +72,11 @@ ShallowWrapper {
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           replace={false}
+          style={
+            Object {
+              "color": "#101010",
+            }
+          }
           to=""
         >
           
@@ -81,6 +94,9 @@ ShallowWrapper {
           "onMouseEnter": [Function],
           "onMouseLeave": [Function],
           "replace": false,
+          "style": Object {
+            "color": "#101010",
+          },
           "to": "",
         },
         "ref": null,
