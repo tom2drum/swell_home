@@ -1,39 +1,24 @@
-import React from 'react';
-import { shallow, mount } from 'enzyme';
-import { StaticRouter } from 'react-router-dom';
-
 import { Navigation } from '../Navigation';
 import navLinks from '../../data/navigation.json';
 import smLinks from '../../data/social-media.json';
-import { sel } from '../../../../tests/utils';
+import { sel, TestHelper } from '../../../../tests/utils';
 
-function mountComponent(props = {}, isShallow = true) {
-	const propsToUse = {
-		location: {
-			pathname: '/'
-		},
-		...props
-	};
-
-	if (isShallow) {
-		return shallow(<Navigation {...propsToUse} />);
+const defaultProps = {
+	location: {
+		pathname: '/'
 	}
+};
 
-	return mount(
-		<StaticRouter context={{}}>
-			<Navigation {...propsToUse} />
-		</StaticRouter>
-	);
-}
+const helper = new TestHelper(Navigation, defaultProps);
 
 test('the component mounts with defaults', () => {
-	const wrapper = mountComponent();
+	const wrapper = helper.mountComponent({}, true);
 
 	expect(wrapper).toMatchSnapshot();
 });
 
 test('it renders correct number of navigation and social media links', () => {
-	const wrapper = mountComponent();
+	const wrapper = helper.mountComponent();
 	const elNavLinks = wrapper.find(sel('nav-links')).children();
 	const elSocialMediaLinks = wrapper.find(sel('social-media-links')).children();
 
@@ -43,7 +28,7 @@ test('it renders correct number of navigation and social media links', () => {
 
 test('method "getDefaultOverlayColor()" returns correct color', () => {
 	const pathname = '/contact';
-	const wrapper = mountComponent({ location: { pathname } });
+	const wrapper = helper.mountComponent({ location: { pathname } }, true);
 	const color = wrapper.instance().getDefaultOverlayColor();
 
 	expect(color).toBe(navLinks.filter(item => item.path === pathname)[0].overlayColor);
@@ -51,14 +36,13 @@ test('method "getDefaultOverlayColor()" returns correct color', () => {
 
 xtest('it changes overlay color when user hover over a navigation link', () => {
 	const index = 1;
-	const wrapper = mountComponent({}, false);
+	const wrapper = helper.mountComponent();
 	const linkToHover = wrapper
-		.find(sel('nav-links'))
+		.find(sel('nav-link'))
 		.children()
 		.at(index);
 
-	linkToHover.simulate('mouseEnter');
-	wrapper.update();
+	linkToHover.simulate('mouseenter');
 	let overlayColor = wrapper.find(sel('overlay')).get(0).props.style.backgroundColor;
 	expect(overlayColor).toBe(navLinks[index].overlayColor);
 
@@ -68,7 +52,7 @@ xtest('it changes overlay color when user hover over a navigation link', () => {
 });
 
 test('method "changeOverlayColorHandler()" changes overlay color', () => {
-	const wrapper = mountComponent();
+	const wrapper = helper.mountComponent({}, true);
 	const backgroundColor = wrapper.instance().getDefaultOverlayColor();
 	const newColor = '#001122';
 
@@ -86,7 +70,7 @@ test('method "changeOverlayColorHandler()" changes overlay color', () => {
 });
 
 test('it switch "is-open" class when toggle clicked', () => {
-	const wrapper = mountComponent({}, false);
+	const wrapper = helper.mountComponent();
 	const toggle = wrapper.find(sel('nav-toggle'));
 
 	toggle.simulate('click');

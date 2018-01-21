@@ -1,25 +1,19 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-
 import NavigationToggle from '../NavigationToggle';
-import { sel } from '../../../../tests/utils';
+import { sel, TestHelper } from '../../../../tests/utils';
 
-function mountComponent(props = {}) {
-	const propsToUse = {
-		onClickCallback: jest.fn(),
-		...props
-	};
+const defaultProps = {
+	onClickCallback: jest.fn()
+};
 
-	return shallow(<NavigationToggle {...propsToUse} />);
-}
+const helper = new TestHelper(NavigationToggle, defaultProps);
 
 test('the component mounts with defaults', () => {
-	const wrapper = mountComponent();
+	const wrapper = helper.mountComponent({}, true);
 	expect(wrapper).toMatchSnapshot();
 });
 
 test('it toggles "is-open" class when clicked', () => {
-	const wrapper = mountComponent();
+	const wrapper = helper.mountComponent({}, true);
 	const toggle = wrapper.find(sel('nav-toggle'));
 	toggle.simulate('click');
 
