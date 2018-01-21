@@ -4,18 +4,13 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 class NavigationToggle extends Component {
-	state = {
-		toggledOn: false
-	};
-
 	onClickHandler = () => {
-		const toggledOn = !this.state.toggledOn;
-		this.setState({ toggledOn });
+		const toggledOn = !this.props.toggledOn;
 		this.props.onClickCallback(toggledOn);
 	};
 
 	render() {
-		const classes = classNames('NavigationToggle', { 'is-open': this.state.toggledOn });
+		const classes = classNames('NavigationToggle', { 'is-open': this.props.toggledOn });
 		return (
 			<div className={classes} data-test="nav-toggle" onClick={this.onClickHandler}>
 				<span />
@@ -25,7 +20,8 @@ class NavigationToggle extends Component {
 }
 
 NavigationToggle.propTypes = {
-	onClickCallback: PropTypes.func.isRequired
+	onClickCallback: PropTypes.func.isRequired,
+	toggledOn: PropTypes.bool.isRequired
 };
 
 export default NavigationToggle;

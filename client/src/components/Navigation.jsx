@@ -33,6 +33,10 @@ class Navigation extends Component {
 		this.setState({ isOpen: toggledOn });
 	};
 
+	onNavLinkClickHandler = () => {
+		this.setState({ isOpen: false });
+	};
+
 	setDefaultOverlayColor() {
 		const color = this.getDefaultOverlayColor();
 		this.setState({ overlayColor: color });
@@ -52,6 +56,7 @@ class Navigation extends Component {
 				key={item.path}
 				{...item}
 				changeOverlayColor={this.changeOverlayColorHandler}
+				onClickCallback={this.onNavLinkClickHandler}
 			/>
 		));
 
@@ -64,7 +69,10 @@ class Navigation extends Component {
 
 		return (
 			<div className={classes} data-test="navigation">
-				<NavigationToggle onClickCallback={this.onToggleClickHandler} />
+				<NavigationToggle
+					onClickCallback={this.onToggleClickHandler}
+					toggledOn={this.state.isOpen}
+				/>
 				<nav className="navbar">
 					<ul className="links" data-test="nav-links">
 						{this.renderNavLinks()}

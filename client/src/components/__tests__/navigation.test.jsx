@@ -75,7 +75,9 @@ test('it switch "is-open" class when toggle clicked', () => {
 
 	toggle.simulate('click');
 	expect(wrapper.find(sel('navigation')).hasClass('is-open')).toBe(true);
+	expect(wrapper.find(sel('nav-toggle')).hasClass('is-open')).toBe(true);
 
 	toggle.simulate('click');
 	expect(wrapper.find(sel('navigation')).hasClass('is-open')).toBe(false);
+	expect(wrapper.find(sel('nav-toggle')).hasClass('is-open')).toBe(false);
 });

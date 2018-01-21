@@ -17,6 +17,10 @@ class NavigationLink extends Component {
 		this.setState({ color: this.defaultColor });
 	};
 
+	onClickHandler = () => {
+		this.props.onClickCallback();
+	};
+
 	defaultColor = '#101010';
 
 	render() {
@@ -29,6 +33,7 @@ class NavigationLink extends Component {
 					activeStyle={{ color: this.props.overlayColor }}
 					onMouseEnter={this.onMouseEnterHandler}
 					onMouseLeave={this.onMouseLeaveHandler}
+					onClick={this.onClickHandler}
 					data-test="nav-link"
 					style={{ color }}
 				>
@@ -43,7 +48,8 @@ NavigationLink.propTypes = {
 	path: PropTypes.string.isRequired,
 	text: PropTypes.string.isRequired,
 	overlayColor: PropTypes.string.isRequired,
-	changeOverlayColor: PropTypes.func.isRequired
+	changeOverlayColor: PropTypes.func.isRequired,
+	onClickCallback: PropTypes.func.isRequired
 };
 
 export default NavigationLink;
