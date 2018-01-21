@@ -59,6 +59,7 @@
 		"react": "16",
 		"react-dom": "16",
 		"react-router-dom": "^4.2.2",
-		"regenerator-runtime": "^0.11.1"
+		"regenerator-runtime": "^0.11.1",
+		"react-slick": "^0.16.0"
 	}
 }
