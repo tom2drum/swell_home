@@ -1,2 +1,35 @@
-.Slider
+@import "../base/vars.sass"
 
+.Slider
+	height: 100%
+
+	.slick-dots
+		bottom: 50px
+
+		li
+			margin: 0 40px
+
+			&.slick-active, &
+				button:before
+					content: ''
+					background-color: $color-white
+					border-radius: 50%
+					width: 16px
+					height: 16px
+					opacity: 1
+
+			button:after
+				content: ''
+				position: absolute
+				top: calc(-10px / 2 + 15px / 2 - 3px)
+				left: calc(-10px / 2 + 15px / 2 - 3px)
+				width: 15px
+				height: 15px
+				background-color: transparent
+				border-radius: 50%
+				border: 1px solid $color-white
+				transition: all 0.3s ease-out
+
+			&.slick-active
+				button:after
+					transform: scale(3.5)

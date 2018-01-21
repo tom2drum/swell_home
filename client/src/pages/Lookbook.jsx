@@ -10,6 +10,7 @@ class Lookbook extends Component {
 
 	componentDidMount() {
 		this.fetchCategories();
+		this.sliderSettings.beforeChange = this.beforeSlideChange;
 	}
 
 	sliderSettings = {
@@ -29,21 +30,24 @@ class Lookbook extends Component {
 		}
 	};
 
+	beforeSlideChange = (oldIndex, newIndex) => {
+		console.log(oldIndex, newIndex);
+	};
+
 	renderSliders = () => {
 		const { categories } = this.state;
 
-		if (categories.length === 0) {
-			return;
+		if (categories.length > 0) {
+			return categories.map(({ image, _id }) => {
+				// eslint-disable-next-line import/no-dynamic-require,global-require
+				const src = require(`../img/categories/${image}`);
+				return (
+					<div key={_id}>
+						<img src={src} alt="" />
+					</div>
+				);
+			});
 		}
-
-		return categories.map(({ image, _id }) => {
-			const src = require(`../img/categories/${image}`);
-			return (
-				<div key={_id}>
-					<img src={src} alt="" />
-				</div>
-			);
-		});
 	};
 
 	render() {
