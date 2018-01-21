@@ -22,4 +22,4 @@ cache:
 script: cd $TEST_DIR && yarn install && yarn test
 
 after_success:
-	- "yarn add coveralls && cat ./coverage/lcov.info | coveralls"
+	- yarn add coveralls && cat ./coverage/lcov.info | coveralls
