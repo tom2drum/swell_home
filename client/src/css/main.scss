@@ -2,11 +2,14 @@
 @import "base/vars.sass";
 @import "base/layout.sass";
 @import "base/animations.scss";
+@import "base/buttons.sass";
 
 @import "components/navigation.sass";
 @import "components/navigationToggle.sass";
 @import "components/slider.sass";
 @import "components/socialMedia.sass";
+@import "components/footerContact.sass";
+@import "components/footerBottom.sass";
 
 @import "pages/lookbook.sass";
 @import "pages/about.sass";

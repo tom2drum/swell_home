@@ -11,7 +11,7 @@ const SocialMedis = () => {
 	));
 
 	return (
-		<ul className="SocialMedia social-media" data-test="social-media-links">
+		<ul className="SocialMedia" data-test="social-media-links">
 			{socialMediaLinks}
 		</ul>
 	);

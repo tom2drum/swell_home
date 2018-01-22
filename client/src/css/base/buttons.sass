@@ -1,0 +1,48 @@
+@import "./vars.sass"
+
+.button
+	position: relative
+	z-index: 1
+	display: flex
+	align-items: center
+	//background-color: $color-black
+	//color: $color-white
+	//border-radius: calc(25px / 2 + 20px)
+	//display: flex
+	//height: 65px
+
+	.label
+		color: $color-white
+		padding: 20px 40px 20px 10px
+		font-size: 22px
+
+	.circle
+		position: relative
+		display: block
+		width: 50px
+		height: 50px
+		background-color: $color-white
+		border-radius: 50%
+		margin: 8px
+
+		&::before
+			content: ''
+			display: block
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			position: absolute
+			top: calc(50% - 10px / 2)
+			left: calc(50% - 10px / 2)
+			background-color: $color-black
+
+	&::before
+		z-index: -1
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		background-color: $color-black
+		border-radius: calc(26px / 2 + 20px)

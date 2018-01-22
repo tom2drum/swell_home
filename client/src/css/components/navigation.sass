@@ -2,12 +2,13 @@
 @import "../base/animations.scss"
 
 .Navigation
-	position: absolute
+	position: fixed
 	top: 0
 	left: -500px
 	height: 100vh
 	display: flex
 	transition: left 0.5s ease-out
+	z-index: 5
 
 	.navbar
 		position: relative
@@ -27,20 +28,14 @@
 				margin: 15px 0
 				transform: translate3d(-100%, 0, 0)
 
-		.social-media
-			width: 100%
+		.SocialMedia
 			position: absolute
 			left: 0
 			bottom: 50px
-			display: flex
-			justify-content: center
-			font-size: 1.2rem
 
 			.link
-				margin: 0 30px
 				transform: translate3d(0, 100px, 0)
-				a
-					@include circle-bg($color-grey, 30px, 1.15)
+
 
 	.overlay
 		width: 0
@@ -56,7 +51,7 @@
 		.links .link
 			animation: slideInLeft 0.5s forwards 0.3s
 
-		.social-media .link
+		.SocialMedia .link
 			animation: slideInUp 0.5s forwards 0.3s
 
 

@@ -1,7 +1,9 @@
 import React from 'react';
 import aboutImg from '../img/pages/about-mission.jpg';
 
-import FooterSocialMedia from '../components/FooterSocialMedia';
+import SocialMedia from '../components/SocialMedia';
+import FooterContact from '../components/FooterContact';
+import FooterBottom from '../components/FooterBottom';
 
 const About = () => (
 	<div>
@@ -21,13 +23,11 @@ const About = () => (
 					</article>
 					<div className="col-lg-2">
 						<img src={aboutImg} alt="swell home mission" className="about-image" />
-						<div className="about-translation-box">
-							<p className="about-translation-name">
+						<div className="translation">
+							<p className="name">
 								Swell. <span>/swɛl/</span>
 							</p>
-							<p className="about-translation-text">
-								Be intensely affected or filled with a particular emotion.
-							</p>
+							<p className="text">Be intensely affected or filled with a particular emotion.</p>
 						</div>
 					</div>
 				</div>
@@ -35,7 +35,9 @@ const About = () => (
 			{/* <div className="holder" /> */}
 		</main>
 		<footer className="Footer">
-			<FooterSocialMedia />
+			<FooterContact />
+			<SocialMedia />
+			<FooterBottom />
 		</footer>
 	</div>
 );
