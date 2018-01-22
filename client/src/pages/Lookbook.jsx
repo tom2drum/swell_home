@@ -33,10 +33,7 @@ class Lookbook extends Component {
 		}
 	};
 
-	beforeSlideChange = (oldIndex, newIndex) => {
-		this.setState({ activeSlide: newIndex });
-		console.log(oldIndex, newIndex);
-	};
+	beforeSlideChange = (oldIndex, newIndex) => this.setState({ activeSlide: newIndex });
 
 	renderSlider = () => {
 		const { categories, activeSlide } = this.state;
@@ -67,10 +64,10 @@ class Lookbook extends Component {
 
 	render() {
 		return (
-			<div className="Lookbook">
+			<main className="Lookbook">
 				{this.renderSlider()}
 				<h1 className="heading">Swell.</h1>
-			</div>
+			</main>
 		);
 	}
 }
