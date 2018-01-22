@@ -1,8 +1,10 @@
 import React from 'react';
 import aboutImg from '../img/pages/about-mission.jpg';
 
-const About = () => {
-	return (
+import FooterSocialMedia from '../components/FooterSocialMedia';
+
+const About = () => (
+	<div>
 		<main className="About">
 			<h1 className="page-heading">About</h1>
 			<section className="intro container">
@@ -18,7 +20,7 @@ const About = () => {
 						</p>
 					</article>
 					<div className="col-lg-2">
-						<img src={aboutImg} alt="swell home mission image" className="about-image" />
+						<img src={aboutImg} alt="swell home mission" className="about-image" />
 						<div className="about-translation-box">
 							<p className="about-translation-name">
 								Swell. <span>/swɛl/</span>
@@ -30,9 +32,12 @@ const About = () => {
 					</div>
 				</div>
 			</section>
-			{/*<div className="holder" />*/}
+			{/* <div className="holder" /> */}
 		</main>
-	);
-};
+		<footer className="Footer">
+			<FooterSocialMedia />
+		</footer>
+	</div>
+);
 
 export default About;
