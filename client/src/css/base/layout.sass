@@ -1,11 +1,18 @@
 @import "./vars.sass"
 
+*
+	box-sizing: border-box
+
 body
 	font-family: 'Cormorant Garamond', serif
 	background-color: $color-steel
 	font-weight: 300
+	font-size: 1.3rem
 a
 	color: $color-black
+
+img
+	width: 100%
 
 .holder
 	width: 100%
@@ -21,11 +28,26 @@ a
 	top: -10vw
 
 .page-subheading
-	font-size: 3.5rem
+	font-size: 5vw
 	text-align: center
 	padding: 0 22%
+	margin-top: -8vw
+	margin-bottom: 100px
+
+.article-heading
+	font-size: 2rem
+	margin-bottom: 30px
+
+/***    GRID    ***/
 
 .container
 	margin: 0 auto
-	max-width: 2000px
-	padding: 0 10rem
+	max-width: 1600px
+	padding: 0 8rem
+
+.row
+	display: flex
+
+.col-lg-2
+	width: 50%
+	padding: 0 20px
