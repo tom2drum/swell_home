@@ -14,7 +14,21 @@
 		"*.{js,jsx,json}": ["prettier --write", "git add"]
 	},
 	"jest": {
-		"setupTestFrameworkScriptFile": "<rootDir>/tests/setup.js"
+		"setupTestFrameworkScriptFile": "<rootDir>/tests/setup.js",
+		"moduleNameMapper": {
+			"\\.(css|jpg|png)$": "<rootDir>/tests/empty-module.js"
+		},
+		"collectCoverageFrom": [
+			"**/*.{js,jsx}",
+			"!**/node_modules/**",
+			"!config/**",
+			"!coverage/**",
+			"!client/build/**",
+			"!start-client.js",
+			"!client/src/index.js",
+			"!client/src/registerServiceWorker.js",
+			"!client/src/App.jsx"
+		]
 	},
 	"scripts": {
 		"start": "node server.js",

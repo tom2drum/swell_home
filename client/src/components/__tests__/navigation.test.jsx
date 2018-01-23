@@ -75,7 +75,21 @@ test('it switch "is-open" class when toggle clicked', () => {
 
 	toggle.simulate('click');
 	expect(wrapper.find(sel('navigation')).hasClass('is-open')).toBe(true);
+	expect(wrapper.find(sel('nav-toggle')).hasClass('is-open')).toBe(true);
 
 	toggle.simulate('click');
 	expect(wrapper.find(sel('navigation')).hasClass('is-open')).toBe(false);
+	expect(wrapper.find(sel('nav-toggle')).hasClass('is-open')).toBe(false);
+});
+
+test('it closes navbar when any of nav links is clicked', () => {
+	const wrapper = helper.mountComponent();
+	const linkToClick = wrapper
+		.find(sel('nav-link'))
+		.children()
+		.at(0);
+
+	linkToClick.simulate('click');
+	expect(wrapper.find(sel('navigation')).hasClass('is-open')).toBe(false);
+	expect(wrapper.find(sel('nav-toggle')).hasClass('is-open')).toBe(false);
 });

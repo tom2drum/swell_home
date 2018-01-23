@@ -6,20 +6,10 @@ import classNames from 'classnames';
 
 import NavigationLink from './NavigationLink';
 import NavigationToggle from './NavigationToggle';
+import SocialMedia from './SocialMedia';
 import navData from '../data/navigation.json';
-import smData from '../data/social-media.json';
 
 class Navigation extends Component {
-	static renderSocialMediaLinks() {
-		return smData.map(({ url, cssClass }) => (
-			<li className="link" key={url}>
-				<a href={url} target="_blank" rel="noopener noreferrer">
-					<span className={cssClass} />
-				</a>
-			</li>
-		));
-	}
-
 	state = {
 		overlayColor: '',
 		isOpen: false
@@ -31,6 +21,10 @@ class Navigation extends Component {
 
 	onToggleClickHandler = toggledOn => {
 		this.setState({ isOpen: toggledOn });
+	};
+
+	onNavLinkClickHandler = () => {
+		this.setState({ isOpen: false });
 	};
 
 	setDefaultOverlayColor() {
@@ -52,6 +46,7 @@ class Navigation extends Component {
 				key={item.path}
 				{...item}
 				changeOverlayColor={this.changeOverlayColorHandler}
+				onClickCallback={this.onNavLinkClickHandler}
 			/>
 		));
 
@@ -64,14 +59,15 @@ class Navigation extends Component {
 
 		return (
 			<div className={classes} data-test="navigation">
-				<NavigationToggle onClickCallback={this.onToggleClickHandler} />
+				<NavigationToggle
+					onClickCallback={this.onToggleClickHandler}
+					toggledOn={this.state.isOpen}
+				/>
 				<nav className="navbar">
 					<ul className="links" data-test="nav-links">
 						{this.renderNavLinks()}
 					</ul>
-					<ul className="social-media" data-test="social-media-links">
-						{Navigation.renderSocialMediaLinks()}
-					</ul>
+					<SocialMedia />
 				</nav>
 				<div className="overlay" style={overlayStyle} data-test="overlay" />
 			</div>

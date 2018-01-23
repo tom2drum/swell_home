@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
 import Lookbook from './pages/Lookbook';
+import About from './pages/About';
 
 class App extends Component {
 	render() {
@@ -11,6 +12,7 @@ class App extends Component {
 				<Navigation />
 				<Switch>
 					<Route exact path="/" component={Lookbook} />
+					<Route path="/about" component={About} />
 				</Switch>
 			</div>
 		);

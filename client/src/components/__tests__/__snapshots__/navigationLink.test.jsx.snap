@@ -6,6 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <NavigationLink
     changeOverlayColor={[Function]}
+    onClickCallback={[Function]}
     overlayColor=""
     path=""
     text=""
@@ -33,6 +34,7 @@ ShallowWrapper {
         ariaCurrent="true"
         data-test="nav-link"
         exact={true}
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
         style={
@@ -60,6 +62,7 @@ ShallowWrapper {
         "children": "",
         "data-test": "nav-link",
         "exact": true,
+        "onClick": [Function],
         "onMouseEnter": [Function],
         "onMouseLeave": [Function],
         "style": Object {
@@ -89,6 +92,7 @@ ShallowWrapper {
           ariaCurrent="true"
           data-test="nav-link"
           exact={true}
+          onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           style={
@@ -116,6 +120,7 @@ ShallowWrapper {
           "children": "",
           "data-test": "nav-link",
           "exact": true,
+          "onClick": [Function],
           "onMouseEnter": [Function],
           "onMouseLeave": [Function],
           "style": Object {

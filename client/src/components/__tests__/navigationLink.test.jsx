@@ -3,6 +3,7 @@ import { sel, TestHelper } from '../../../../tests/utils';
 
 const defaultProps = {
 	changeOverlayColor() {},
+	onClickCallback() {},
 	path: '',
 	text: '',
 	overlayColor: '',

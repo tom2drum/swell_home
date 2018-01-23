@@ -4,10 +4,7 @@ exports[`the component mounts with defaults 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <NavigationToggle
-    onClickCallback={[MockFunction]}
-    toggledOn={false}
-  />,
+  Symbol(enzyme.__unrendered__): <FooterBottom />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -20,21 +17,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <span />,
-      "className": "NavigationToggle",
-      "data-test": "nav-toggle",
-      "onClick": [Function],
+      "children": "Terms and Conditions",
+      "className": "FooterBottom",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {},
-      "ref": null,
-      "rendered": null,
-      "type": "span",
-    },
+    "rendered": "Terms and Conditions",
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -43,21 +30,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <span />,
-        "className": "NavigationToggle",
-        "data-test": "nav-toggle",
-        "onClick": [Function],
+        "children": "Terms and Conditions",
+        "className": "FooterBottom",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": "span",
-      },
+      "rendered": "Terms and Conditions",
       "type": "div",
     },
   ],
