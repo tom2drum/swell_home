@@ -11,6 +11,7 @@
 	justify-content: center
 	cursor: pointer
 	z-index: 10
+	transition: all 0.3s ease-in-out
 
 	span,
 	span:before
@@ -32,6 +33,9 @@
 
 	&:hover
 		span
+			transform: rotate(90deg)
+
+		&.is-open
 			transform: rotate(90deg)
 
 	&.is-open
