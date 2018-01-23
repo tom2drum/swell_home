@@ -1,0 +1,1013 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the component mounts with defaults 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <About />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <main
+          className="About"
+        >
+          <h1
+            className="page-heading"
+          >
+            About
+          </h1>
+          <section
+            className="intro container"
+          >
+            <h2
+              className="page-subheading"
+            >
+              Proudly designed for everyday living
+            </h2>
+            <div
+              className="row"
+            >
+              <article
+                className="col-lg-2"
+              >
+                <h3
+                  className="article-heading"
+                >
+                  01 — Our Mission
+                </h3>
+                <p>
+                  Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.
+                </p>
+              </article>
+              <div
+                className="col-lg-2"
+              >
+                <img
+                  alt="swell home mission"
+                  className="about-image"
+                  src=""
+                />
+                <div
+                  className="translation"
+                >
+                  <p
+                    className="name"
+                  >
+                    Swell. 
+                    <span>
+                      /swɛl/
+                    </span>
+                  </p>
+                  <p
+                    className="text"
+                  >
+                    Be intensely affected or filled with a particular emotion.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>,
+        <footer
+          className="Footer"
+        >
+          <FooterContact />
+          <SocialMedis />
+          <FooterBottom />
+        </footer>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="page-heading"
+            >
+              About
+            </h1>,
+            <section
+              className="intro container"
+            >
+              <h2
+                className="page-subheading"
+              >
+                Proudly designed for everyday living
+              </h2>
+              <div
+                className="row"
+              >
+                <article
+                  className="col-lg-2"
+                >
+                  <h3
+                    className="article-heading"
+                  >
+                    01 — Our Mission
+                  </h3>
+                  <p>
+                    Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.
+                  </p>
+                </article>
+                <div
+                  className="col-lg-2"
+                >
+                  <img
+                    alt="swell home mission"
+                    className="about-image"
+                    src=""
+                  />
+                  <div
+                    className="translation"
+                  >
+                    <p
+                      className="name"
+                    >
+                      Swell. 
+                      <span>
+                        /swɛl/
+                      </span>
+                    </p>
+                    <p
+                      className="text"
+                    >
+                      Be intensely affected or filled with a particular emotion.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>,
+          ],
+          "className": "About",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "About",
+              "className": "page-heading",
+            },
+            "ref": null,
+            "rendered": "About",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2
+                  className="page-subheading"
+                >
+                  Proudly designed for everyday living
+                </h2>,
+                <div
+                  className="row"
+                >
+                  <article
+                    className="col-lg-2"
+                  >
+                    <h3
+                      className="article-heading"
+                    >
+                      01 — Our Mission
+                    </h3>
+                    <p>
+                      Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.
+                    </p>
+                  </article>
+                  <div
+                    className="col-lg-2"
+                  >
+                    <img
+                      alt="swell home mission"
+                      className="about-image"
+                      src=""
+                    />
+                    <div
+                      className="translation"
+                    >
+                      <p
+                        className="name"
+                      >
+                        Swell. 
+                        <span>
+                          /swɛl/
+                        </span>
+                      </p>
+                      <p
+                        className="text"
+                      >
+                        Be intensely affected or filled with a particular emotion.
+                      </p>
+                    </div>
+                  </div>
+                </div>,
+              ],
+              "className": "intro container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Proudly designed for everyday living",
+                  "className": "page-subheading",
+                },
+                "ref": null,
+                "rendered": "Proudly designed for everyday living",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <article
+                      className="col-lg-2"
+                    >
+                      <h3
+                        className="article-heading"
+                      >
+                        01 — Our Mission
+                      </h3>
+                      <p>
+                        Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.
+                      </p>
+                    </article>,
+                    <div
+                      className="col-lg-2"
+                    >
+                      <img
+                        alt="swell home mission"
+                        className="about-image"
+                        src=""
+                      />
+                      <div
+                        className="translation"
+                      >
+                        <p
+                          className="name"
+                        >
+                          Swell. 
+                          <span>
+                            /swɛl/
+                          </span>
+                        </p>
+                        <p
+                          className="text"
+                        >
+                          Be intensely affected or filled with a particular emotion.
+                        </p>
+                      </div>
+                    </div>,
+                  ],
+                  "className": "row",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <h3
+                          className="article-heading"
+                        >
+                          01 — Our Mission
+                        </h3>,
+                        <p>
+                          Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.
+                        </p>,
+                      ],
+                      "className": "col-lg-2",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "01 — Our Mission",
+                          "className": "article-heading",
+                        },
+                        "ref": null,
+                        "rendered": "01 — Our Mission",
+                        "type": "h3",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.",
+                        },
+                        "ref": null,
+                        "rendered": "Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.",
+                        "type": "p",
+                      },
+                    ],
+                    "type": "article",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <img
+                          alt="swell home mission"
+                          className="about-image"
+                          src=""
+                        />,
+                        <div
+                          className="translation"
+                        >
+                          <p
+                            className="name"
+                          >
+                            Swell. 
+                            <span>
+                              /swɛl/
+                            </span>
+                          </p>
+                          <p
+                            className="text"
+                          >
+                            Be intensely affected or filled with a particular emotion.
+                          </p>
+                        </div>,
+                      ],
+                      "className": "col-lg-2",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "swell home mission",
+                          "className": "about-image",
+                          "src": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <p
+                              className="name"
+                            >
+                              Swell. 
+                              <span>
+                                /swɛl/
+                              </span>
+                            </p>,
+                            <p
+                              className="text"
+                            >
+                              Be intensely affected or filled with a particular emotion.
+                            </p>,
+                          ],
+                          "className": "translation",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                "Swell. ",
+                                <span>
+                                  /swɛl/
+                                </span>,
+                              ],
+                              "className": "name",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Swell. ",
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "/swɛl/",
+                                },
+                                "ref": null,
+                                "rendered": "/swɛl/",
+                                "type": "span",
+                              },
+                            ],
+                            "type": "p",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Be intensely affected or filled with a particular emotion.",
+                              "className": "text",
+                            },
+                            "ref": null,
+                            "rendered": "Be intensely affected or filled with a particular emotion.",
+                            "type": "p",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "main",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <FooterContact />,
+            <SocialMedis />,
+            <FooterBottom />,
+          ],
+          "className": "Footer",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "footer",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <main
+            className="About"
+          >
+            <h1
+              className="page-heading"
+            >
+              About
+            </h1>
+            <section
+              className="intro container"
+            >
+              <h2
+                className="page-subheading"
+              >
+                Proudly designed for everyday living
+              </h2>
+              <div
+                className="row"
+              >
+                <article
+                  className="col-lg-2"
+                >
+                  <h3
+                    className="article-heading"
+                  >
+                    01 — Our Mission
+                  </h3>
+                  <p>
+                    Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.
+                  </p>
+                </article>
+                <div
+                  className="col-lg-2"
+                >
+                  <img
+                    alt="swell home mission"
+                    className="about-image"
+                    src=""
+                  />
+                  <div
+                    className="translation"
+                  >
+                    <p
+                      className="name"
+                    >
+                      Swell. 
+                      <span>
+                        /swɛl/
+                      </span>
+                    </p>
+                    <p
+                      className="text"
+                    >
+                      Be intensely affected or filled with a particular emotion.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>,
+          <footer
+            className="Footer"
+          >
+            <FooterContact />
+            <SocialMedis />
+            <FooterBottom />
+          </footer>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="page-heading"
+              >
+                About
+              </h1>,
+              <section
+                className="intro container"
+              >
+                <h2
+                  className="page-subheading"
+                >
+                  Proudly designed for everyday living
+                </h2>
+                <div
+                  className="row"
+                >
+                  <article
+                    className="col-lg-2"
+                  >
+                    <h3
+                      className="article-heading"
+                    >
+                      01 — Our Mission
+                    </h3>
+                    <p>
+                      Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.
+                    </p>
+                  </article>
+                  <div
+                    className="col-lg-2"
+                  >
+                    <img
+                      alt="swell home mission"
+                      className="about-image"
+                      src=""
+                    />
+                    <div
+                      className="translation"
+                    >
+                      <p
+                        className="name"
+                      >
+                        Swell. 
+                        <span>
+                          /swɛl/
+                        </span>
+                      </p>
+                      <p
+                        className="text"
+                      >
+                        Be intensely affected or filled with a particular emotion.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>,
+            ],
+            "className": "About",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "About",
+                "className": "page-heading",
+              },
+              "ref": null,
+              "rendered": "About",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2
+                    className="page-subheading"
+                  >
+                    Proudly designed for everyday living
+                  </h2>,
+                  <div
+                    className="row"
+                  >
+                    <article
+                      className="col-lg-2"
+                    >
+                      <h3
+                        className="article-heading"
+                      >
+                        01 — Our Mission
+                      </h3>
+                      <p>
+                        Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.
+                      </p>
+                    </article>
+                    <div
+                      className="col-lg-2"
+                    >
+                      <img
+                        alt="swell home mission"
+                        className="about-image"
+                        src=""
+                      />
+                      <div
+                        className="translation"
+                      >
+                        <p
+                          className="name"
+                        >
+                          Swell. 
+                          <span>
+                            /swɛl/
+                          </span>
+                        </p>
+                        <p
+                          className="text"
+                        >
+                          Be intensely affected or filled with a particular emotion.
+                        </p>
+                      </div>
+                    </div>
+                  </div>,
+                ],
+                "className": "intro container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Proudly designed for everyday living",
+                    "className": "page-subheading",
+                  },
+                  "ref": null,
+                  "rendered": "Proudly designed for everyday living",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <article
+                        className="col-lg-2"
+                      >
+                        <h3
+                          className="article-heading"
+                        >
+                          01 — Our Mission
+                        </h3>
+                        <p>
+                          Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.
+                        </p>
+                      </article>,
+                      <div
+                        className="col-lg-2"
+                      >
+                        <img
+                          alt="swell home mission"
+                          className="about-image"
+                          src=""
+                        />
+                        <div
+                          className="translation"
+                        >
+                          <p
+                            className="name"
+                          >
+                            Swell. 
+                            <span>
+                              /swɛl/
+                            </span>
+                          </p>
+                          <p
+                            className="text"
+                          >
+                            Be intensely affected or filled with a particular emotion.
+                          </p>
+                        </div>
+                      </div>,
+                    ],
+                    "className": "row",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h3
+                            className="article-heading"
+                          >
+                            01 — Our Mission
+                          </h3>,
+                          <p>
+                            Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.
+                          </p>,
+                        ],
+                        "className": "col-lg-2",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "01 — Our Mission",
+                            "className": "article-heading",
+                          },
+                          "ref": null,
+                          "rendered": "01 — Our Mission",
+                          "type": "h3",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.",
+                          },
+                          "ref": null,
+                          "rendered": "Swell was born from the desire to make contemporary and functional design attainable to everyone. We believe your home should make you proud whether enjoyed alone, or with company. Meaningful design is not only how something looks but how you connect with it in everyday living.",
+                          "type": "p",
+                        },
+                      ],
+                      "type": "article",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <img
+                            alt="swell home mission"
+                            className="about-image"
+                            src=""
+                          />,
+                          <div
+                            className="translation"
+                          >
+                            <p
+                              className="name"
+                            >
+                              Swell. 
+                              <span>
+                                /swɛl/
+                              </span>
+                            </p>
+                            <p
+                              className="text"
+                            >
+                              Be intensely affected or filled with a particular emotion.
+                            </p>
+                          </div>,
+                        ],
+                        "className": "col-lg-2",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "swell home mission",
+                            "className": "about-image",
+                            "src": "",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <p
+                                className="name"
+                              >
+                                Swell. 
+                                <span>
+                                  /swɛl/
+                                </span>
+                              </p>,
+                              <p
+                                className="text"
+                              >
+                                Be intensely affected or filled with a particular emotion.
+                              </p>,
+                            ],
+                            "className": "translation",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": Array [
+                                  "Swell. ",
+                                  <span>
+                                    /swɛl/
+                                  </span>,
+                                ],
+                                "className": "name",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                "Swell. ",
+                                Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": "/swɛl/",
+                                  },
+                                  "ref": null,
+                                  "rendered": "/swɛl/",
+                                  "type": "span",
+                                },
+                              ],
+                              "type": "p",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Be intensely affected or filled with a particular emotion.",
+                                "className": "text",
+                              },
+                              "ref": null,
+                              "rendered": "Be intensely affected or filled with a particular emotion.",
+                              "type": "p",
+                            },
+                          ],
+                          "type": "div",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "section",
+            },
+          ],
+          "type": "main",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <FooterContact />,
+              <SocialMedis />,
+              <FooterBottom />,
+            ],
+            "className": "Footer",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "footer",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

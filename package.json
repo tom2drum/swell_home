@@ -15,6 +15,9 @@
 	},
 	"jest": {
 		"setupTestFrameworkScriptFile": "<rootDir>/tests/setup.js",
+		"moduleNameMapper": {
+			"\\.(css|jpg|png)$": "<rootDir>/tests/empty-module.js"
+		},
 		"collectCoverageFrom": [
 			"**/*.{js,jsx}",
 			"!**/node_modules/**",

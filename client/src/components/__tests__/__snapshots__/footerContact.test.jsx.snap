@@ -1,0 +1,423 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the component mounts with defaults 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FooterContact />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p
+          className="text"
+        >
+          I want to know more
+        </p>,
+        <div
+          className="row buttons"
+        >
+          <Link
+            className="button"
+            replace={false}
+            to="/"
+          >
+            <span
+              className="circle"
+            />
+            <span
+              className="label"
+            >
+              Retail Enquires
+            </span>
+          </Link>
+          <Link
+            className="button"
+            replace={false}
+            to="/"
+          >
+            <span
+              className="circle"
+            />
+            <span
+              className="label"
+            >
+              Join Mail List
+            </span>
+          </Link>
+        </div>,
+      ],
+      "className": "FooterContact container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "I want to know more",
+          "className": "text",
+        },
+        "ref": null,
+        "rendered": "I want to know more",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              className="button"
+              replace={false}
+              to="/"
+            >
+              <span
+                className="circle"
+              />
+              <span
+                className="label"
+              >
+                Retail Enquires
+              </span>
+            </Link>,
+            <Link
+              className="button"
+              replace={false}
+              to="/"
+            >
+              <span
+                className="circle"
+              />
+              <span
+                className="label"
+              >
+                Join Mail List
+              </span>
+            </Link>,
+          ],
+          "className": "row buttons",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="circle"
+                />,
+                <span
+                  className="label"
+                >
+                  Retail Enquires
+                </span>,
+              ],
+              "className": "button",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "circle",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Retail Enquires",
+                  "className": "label",
+                },
+                "ref": null,
+                "rendered": "Retail Enquires",
+                "type": "span",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="circle"
+                />,
+                <span
+                  className="label"
+                >
+                  Join Mail List
+                </span>,
+              ],
+              "className": "button",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "circle",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Join Mail List",
+                  "className": "label",
+                },
+                "ref": null,
+                "rendered": "Join Mail List",
+                "type": "span",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p
+            className="text"
+          >
+            I want to know more
+          </p>,
+          <div
+            className="row buttons"
+          >
+            <Link
+              className="button"
+              replace={false}
+              to="/"
+            >
+              <span
+                className="circle"
+              />
+              <span
+                className="label"
+              >
+                Retail Enquires
+              </span>
+            </Link>
+            <Link
+              className="button"
+              replace={false}
+              to="/"
+            >
+              <span
+                className="circle"
+              />
+              <span
+                className="label"
+              >
+                Join Mail List
+              </span>
+            </Link>
+          </div>,
+        ],
+        "className": "FooterContact container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "I want to know more",
+            "className": "text",
+          },
+          "ref": null,
+          "rendered": "I want to know more",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="button"
+                replace={false}
+                to="/"
+              >
+                <span
+                  className="circle"
+                />
+                <span
+                  className="label"
+                >
+                  Retail Enquires
+                </span>
+              </Link>,
+              <Link
+                className="button"
+                replace={false}
+                to="/"
+              >
+                <span
+                  className="circle"
+                />
+                <span
+                  className="label"
+                >
+                  Join Mail List
+                </span>
+              </Link>,
+            ],
+            "className": "row buttons",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="circle"
+                  />,
+                  <span
+                    className="label"
+                  >
+                    Retail Enquires
+                  </span>,
+                ],
+                "className": "button",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "circle",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Retail Enquires",
+                    "className": "label",
+                  },
+                  "ref": null,
+                  "rendered": "Retail Enquires",
+                  "type": "span",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="circle"
+                  />,
+                  <span
+                    className="label"
+                  >
+                    Join Mail List
+                  </span>,
+                ],
+                "className": "button",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "circle",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Join Mail List",
+                    "className": "label",
+                  },
+                  "ref": null,
+                  "rendered": "Join Mail List",
+                  "type": "span",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

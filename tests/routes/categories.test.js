@@ -24,6 +24,5 @@ describe('GET /api/categories', () => {
 	test('should get all product categories', async () => {
 		const categories = await api.get('/categories').then(res => res.data.categories);
 		expect(categories).toHaveLength(categoriesSeed.length);
-		console.log(categories.length);
 	});
 });
